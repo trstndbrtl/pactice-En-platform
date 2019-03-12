@@ -4,13 +4,16 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
+        <link href="{{ asset('libraries/uikit/uikit.min.css') }}" rel="stylesheet"/>
+        {{ encore_entry_link_tags('app') }}
         {% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
         {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
+        <script src="{{ asset('libraries/uikit/uikit.min.js') }}"></script>
+        <script src="{{ asset('libraries/uikit/uikit-icons.min.js') }}"></script>
+        {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </body>
 </html>
