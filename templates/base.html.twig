@@ -9,6 +9,7 @@
         {% endblock %}
     </head>
     <body>
+        {{ include('partials/navbar.html.twig') }}
         {% block body %}{% endblock %}
         {% block javascripts %}
         <script src="{{ asset('libraries/uikit/uikit.min.js') }}"></script>
