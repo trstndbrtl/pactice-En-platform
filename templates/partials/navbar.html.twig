@@ -2,15 +2,17 @@
     <div class="uk-container uk-container-small">
         <nav class="uk-navbar-container uk-navbar-transparent uk-margin" uk-navbar>
             <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-logo" href="#">eEnglish</a>
+                <a class="uk-navbar-item uk-logo" href="{{ path('app_home') }}">eEnglish</a>
                 <ul class="uk-navbar-nav">
-                    <li><a href="#"><span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>Contact</a></li>
+                    <li><a href="{{ path('app_list_verb') }}"><span class="uk-icon uk-margin-small-right" uk-icon="icon: list"></span>Verbes</a></li>
+                    <li><a href="#"><span class="uk-icon uk-margin-small-right" uk-icon="icon: mail"></span>Contact</a></li>
                 </ul>
                 <div class="uk-navbar-item"></div>
             </div>
             <div class="uk-navbar-right">
                 {% if is_granted('ROLE_USER') %}
                 <ul class="uk-navbar-nav">
+                    <li><a href="{{ path('app_add_verb') }}" uk-icon="icon: plus-circle"></a></li>
                     <li>
                         <a href="#"><span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>{{ app.user.forname }}</a>
                         <div class="uk-navbar-dropdown">

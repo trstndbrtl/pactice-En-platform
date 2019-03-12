@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ page_title }} !{% endblock %}
+{% block body %}
+<div class="uk-section">
+    <div class="uk-container uk-container-small">
+        <h1>{{ page_title }}</h1>
+        {{ form_start(form, { 'attr': { 'uk-grid': '', 'class': 'uk-grid-small' } }) }}
+            {# element form present #}
+            <div class="uk-width-1-4@s">
+                {{ form_widget(form.present, { 'attr': { 'class': 'uk-input', 'placeholder': 'Présent' }} ) }}
+            </div>
+            {# element form preterit #}
+            <div class="uk-width-1-4@s">
+                {{ form_widget(form.preterit, { 'attr': { 'class': 'uk-input', 'placeholder': 'Préterit' }} ) }}
+            </div>
+            {# element form participe #}
+            <div class="uk-width-1-4@s">
+                {{ form_widget(form.participe, { 'attr': { 'class': 'uk-input', 'placeholder': 'Participe passé' }} ) }}
+            </div>
+            {# element form irregular #}
+            <div class="uk-width-1-4@s">
+                {{ form_widget(form.irregular, { 'attr': { 'class': 'uk-checkbox' }} ) }}
+                {{ form_label(form.irregular ) }}
+            </div>
+            {# element form traduction #}
+            <div class="uk-width-1-2@s">
+                {{ form_widget(form.traduction, { 'attr': { 'class': 'uk-input', 'placeholder': 'Traduction' }} ) }}
+            </div>
+            {# element form phonetique #}
+            <div class="uk-width-1-2@s">
+                {{ form_widget(form.phonetique, { 'attr': { 'class': 'uk-input', 'placeholder': 'Phonétique' }} ) }}
+            </div>
+            {# element form button #}
+            <div class="uk-width-1-1@s">
+                <button class="uk-button uk-button-secondary uk-width-1-1">Ajouter</button>
+            </div>
+        {{ form_end(form) }}
+    </div>
+</div>
+{% endblock %}

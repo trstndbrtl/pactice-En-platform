@@ -1,0 +1,1086 @@
+App\Entity\Verb:
+    abide:
+        present: abide
+        preterit: abode
+        participe: abode
+        traduction: 'rester/tolérer/demeurer'
+        phonetique: ''
+        irregular: true
+    arise:
+        present: arise
+        preterit: arose
+        participe: arisen
+        traduction: 'survenir'
+        phonetique: ''
+        irregular: true
+    awake:
+        present: awake
+        preterit: awoke
+        participe: awoken
+        traduction: 'se réveiller'
+        phonetique: ''
+        irregular: true
+    be:
+        present: be
+        preterit: was
+        participe: been
+        traduction: 'être'
+        phonetique: ''
+        irregular: true
+    bear:
+        present: bear
+        preterit: bore
+        participe: borne
+        traduction: 'porter/supporter/naître'
+        phonetique: ''
+        irregular: true
+    beat:
+        present: beat
+        preterit: beat
+        participe: beaten
+        traduction: 'battre'
+        phonetique: ''
+        irregular: true
+    become:
+        present: become
+        preterit: became
+        participe: become
+        traduction: 'devenir'
+        phonetique: ''
+        irregular: true
+    begin:
+        present: begin
+        preterit: began
+        participe: begun
+        traduction: 'commencer'
+        phonetique: ''
+        irregular: true
+    bend:
+        present: bend
+        preterit: bent
+        participe: bent
+        traduction: 'fléchir/se courber'
+        phonetique: ''
+        irregular: true
+    bet:
+        present: bet
+        preterit: bet
+        participe: bet
+        traduction: 'parier'
+        phonetique: ''
+        irregular: true
+    bid:
+        present: bid
+        preterit: bid
+        participe: bid
+        traduction: 'offrir un prix/ordonner'
+        phonetique: ''
+        irregular: true
+    bind:
+        present: bind
+        preterit: bound
+        participe: bound
+        traduction: 'lier/relier'
+        phonetique: ''
+        irregular: true
+    bite:
+        present: bite
+        preterit: bit
+        participe: bitten
+        traduction: 'mordre'
+        phonetique: ''
+        irregular: true
+    bleed:
+        present: bleed
+        preterit: bled
+        participe: bled
+        traduction: 'saigner'
+        phonetique: ''
+        irregular: true
+    blow:
+        present: blow
+        preterit: blew
+        participe: blown
+        traduction: 'souffler'
+        phonetique: ''
+        irregular: true
+    break:
+        present: break
+        preterit: broke
+        participe: broken
+        traduction: 'casser'
+        phonetique: ''
+        irregular: true
+    breed:
+        present: breed
+        preterit: bred
+        participe: bred
+        traduction: 'élever des animaux'
+        phonetique: ''
+        irregular: true
+    bring:
+        present: bring
+        preterit: brought
+        participe: brought
+        traduction: 'apporter'
+        phonetique: ''
+        irregular: true
+    build:
+        present: build
+        preterit: build
+        participe: build
+        traduction: 'construire'
+        phonetique: ''
+        irregular: true
+    burn:
+        present: burn
+        preterit: burnt
+        participe: burnt
+        traduction: 'brûler'
+        phonetique: ''
+        irregular: true
+    burst:
+        present: burst
+        preterit: burst
+        participe: burst
+        traduction: 'éclater'
+        phonetique: ''
+        irregular: true
+    buy:
+        present: buy
+        preterit: bought
+        participe: bought
+        traduction: 'acheter'
+        phonetique: ''
+        irregular: true
+    cast:
+        present: cast
+        preterit: cast
+        participe: cast
+        traduction: 'jeter/distribuer (rôles)'
+        phonetique: ''
+        irregular: true
+    choose:
+        present: choose
+        preterit: chose
+        participe: chosen
+        traduction: 'acheter'
+        phonetique: ''
+        irregular: true
+    cling:
+        present: cling
+        preterit: clung
+        participe: clung
+        traduction: 's''accrocher'
+        phonetique: ''
+        irregular: true
+    come:
+        present: come
+        preterit: came
+        participe: come
+        traduction: 'venir'
+        phonetique: ''
+        irregular: true
+    cost:
+        present: cost
+        preterit: cost
+        participe: cost
+        traduction: 'coûter'
+        phonetique: ''
+        irregular: true
+    creep:
+        present: creep
+        preterit: crept
+        participe: crept
+        traduction: 'ramper'
+        phonetique: ''
+        irregular: true
+    catch:
+        present: catch
+        preterit: caught
+        participe: bcaght
+        traduction: 'attraper'
+        phonetique: ''
+        irregular: true
+    cut:
+        present: cut
+        preterit: cut
+        participe: cut
+        traduction: 'couper'
+        phonetique: ''
+        irregular: true
+    deal:
+        present: deal
+        preterit: dealt
+        participe: dealt
+        traduction: 'distribuer'
+        phonetique: ''
+        irregular: true
+    dig:
+        present: dig
+        preterit: dug
+        participe: dug
+        traduction: 'creuser'
+        phonetique: ''
+        irregular: true
+    do:
+        present: do
+        preterit: did
+        participe: done
+        traduction: 'faire'
+        phonetique: ''
+        irregular: true
+    draw:
+        present: draw
+        preterit: drew
+        participe: drawn
+        traduction: 'dessiner'
+        phonetique: ''
+        irregular: true
+    dream:
+        present: dream
+        preterit: dreamt
+        participe: dreamt
+        traduction: 'rêver'
+        phonetique: ''
+        irregular: true
+    drink:
+        present: drink
+        preterit: drank
+        participe: drunk
+        traduction: 'boire'
+        phonetique: ''
+        irregular: true
+    drive:
+        present: drive
+        preterit: drove
+        participe: driven
+        traduction: 'conduire'
+        phonetique: ''
+        irregular: true
+    dwell:
+        present: dwell
+        preterit: dwelt
+        participe: dwelt
+        traduction: 'habiter'
+        phonetique: ''
+        irregular: true
+    eat:
+        present: eat
+        preterit: ate
+        participe: eaten
+        traduction: 'manger'
+        phonetique: ''
+        irregular: true
+    fall:
+        present: fall
+        preterit: fell
+        participe: fallen
+        traduction: 'tomber'
+        phonetique: ''
+        irregular: true
+    feed:
+        present: feed
+        preterit: fed
+        participe: fed
+        traduction: 'nourrir'
+        phonetique: ''
+        irregular: true
+    feel:
+        present: feel
+        preterit: felt
+        participe: felt
+        traduction: 'éprouver un sentiment'
+        phonetique: ''
+        irregular: true
+    fight:
+        present: fight
+        preterit: fought
+        participe: fought
+        traduction: 'combattre'
+        phonetique: ''
+        irregular: true
+    find:
+        present: find
+        preterit: found
+        participe: found
+        traduction: 'trouver'
+        phonetique: ''
+        irregular: true
+    flee:
+        present: flee
+        preterit: fled
+        participe: fled
+        traduction: 's''enfuir'
+        phonetique: ''
+        irregular: true
+    fling:
+        present: fling
+        preterit: flung
+        participe: flung
+        traduction: 'jeter violemment'
+        phonetique: ''
+        irregular: true
+    fly:
+        present: fly
+        preterit: flew
+        participe: flown
+        traduction: 'voler'
+        phonetique: ''
+        irregular: true
+    forbid:
+        present: forbid
+        preterit: forbade
+        participe: forbidden
+        traduction: 'interdire'
+        phonetique: ''
+        irregular: true
+    forget:
+        present: forget
+        preterit: forgot
+        participe: forgotten
+        traduction: 'oublier'
+        phonetique: ''
+        irregular: true
+    freeze:
+        present: freeze
+        preterit: froze
+        participe: frozen
+        traduction: 'geler'
+        phonetique: ''
+        irregular: true
+    get:
+        present: get
+        preterit: got
+        participe: got
+        traduction: 'obtenir'
+        phonetique: ''
+        irregular: true
+    give:
+        present: give
+        preterit: gave
+        participe: given
+        traduction: 'donner'
+        phonetique: ''
+        irregular: true
+    go:
+        present: go
+        preterit: went
+        participe: gone
+        traduction: 'aller'
+        phonetique: ''
+        irregular: true
+    grind:
+        present: grind
+        preterit: ground
+        participe: ground
+        traduction: 'moudre'
+        phonetique: ''
+        irregular: true
+    grow:
+        present: grow
+        preterit: grew
+        participe: grown
+        traduction: 'grandir'
+        phonetique: ''
+        irregular: true
+    hang:
+        present: hang
+        preterit: hung
+        participe: hung
+        traduction: 'pendre/accrocher'
+        phonetique: ''
+        irregular: true
+    have:
+        present: have
+        preterit: had
+        participe: had
+        traduction: 'avoir'
+        phonetique: ''
+        irregular: true
+    hear:
+        present: hear
+        preterit: heard
+        participe: heard
+        traduction: 'entendre'
+        phonetique: ''
+        irregular: true
+    hide:
+        present: hide
+        preterit: hid
+        participe: hidden
+        traduction: 'se cacher'
+        phonetique: ''
+        irregular: true
+    hit:
+        present: hit
+        preterit: hit
+        participe: hit
+        traduction: 'frapper/atteindre'
+        phonetique: ''
+        irregular: true
+    hold:
+        present: hold
+        preterit: held
+        participe: held
+        traduction: 'tenir'
+        phonetique: ''
+        irregular: true
+    hurt:
+        present: hurt
+        preterit: hurt
+        participe: hurt
+        traduction: 'blesser'
+        phonetique: ''
+        irregular: true
+    keep:
+        present: keep
+        preterit: kept
+        participe: kept
+        traduction: 'garder'
+        phonetique: ''
+        irregular: true
+    kneel:
+        present: kneel
+        preterit: knelt
+        participe: knelt
+        traduction: 's''agenouiller'
+        phonetique: ''
+        irregular: true
+    know:
+        present: know
+        preterit: knew
+        participe: known
+        traduction: 'savoir/connaître'
+        phonetique: ''
+        irregular: true
+    lay:
+        present: lay
+        preterit: laid
+        participe: laid
+        traduction: 'poser à plat-étendre'
+        phonetique: ''
+        irregular: true
+    lead:
+        present: led
+        preterit: led
+        participe: mener
+        traduction: 'entendre'
+        phonetique: ''
+        irregular: true
+    lean:
+        present: lean
+        preterit: leant
+        participe: leant
+        traduction: 's''appuyer'
+        phonetique: ''
+        irregular: true
+    leap:
+        present: leap
+        preterit: leapt
+        participe: leapt
+        traduction: 'sauter'
+        phonetique: ''
+        irregular: true
+    learn:
+        present: learn
+        preterit: learnt
+        participe: learnt
+        traduction: 'apprendre'
+        phonetique: ''
+        irregular: true
+    leave:
+        present: leave
+        preterit: left
+        participe: left
+        traduction: 'laisser/quitter'
+        phonetique: ''
+        irregular: true
+    lend:
+        present: lend
+        preterit: lent
+        participe: lent
+        traduction: 'prêter'
+        phonetique: ''
+        irregular: true
+    let:
+        present: let
+        preterit: let
+        participe: let
+        traduction: 'permettre/louer'
+        phonetique: ''
+        irregular: true
+    lie:
+        present: lie
+        preterit: lay
+        participe: lain
+        traduction: 'être étendu'
+        phonetique: ''
+        irregular: true
+    light:
+        present: light
+        preterit: lit
+        participe: lit
+        traduction: 'allumer'
+        phonetique: ''
+        irregular: true
+    lose:
+        present: lose
+        preterit: lost
+        participe: lost
+        traduction: 'perdre'
+        phonetique: ''
+        irregular: true
+    make:
+        present: make
+        preterit: made
+        participe: made
+        traduction: 'faire/fabriquer'
+        phonetique: ''
+        irregular: true
+    mean:
+        present: mean
+        preterit: meant
+        participe: meant
+        traduction: 'signifier'
+        phonetique: ''
+        irregular: true
+    meet:
+        present: meet
+        preterit: met
+        participe: met
+        traduction: 'se rencontrer'
+        phonetique: ''
+        irregular: true
+    pay:
+        present: pay
+        preterit: paid
+        participe: paid
+        traduction: 'payer'
+        phonetique: ''
+        irregular: true
+    put:
+        present: put
+        preterit: put
+        participe: put
+        traduction: 'mettre'
+        phonetique: ''
+        irregular: true
+    quit:
+        present: quit
+        preterit: quit
+        participe: quit
+        traduction: 'cesser'
+        phonetique: ''
+        irregular: true
+    read:
+        present: read
+        preterit: read
+        participe: read
+        traduction: 'lire'
+        phonetique: ''
+        irregular: true
+    rid:
+        present: rid
+        preterit: rid
+        participe: rid
+        traduction: 'débarrasser'
+        phonetique: ''
+        irregular: true
+    ride:
+        present: ride
+        preterit: rode
+        participe: ridden
+        traduction: 'chevaucher'
+        phonetique: ''
+        irregular: true
+    ring:
+        present: ring
+        preterit: rang
+        participe: rung
+        traduction: 'sonner'
+        phonetique: ''
+        irregular: true
+    rise:
+        present: rise
+        preterit: rose
+        participe: risen
+        traduction: 's''élever/se lever'
+        phonetique: ''
+        irregular: true
+    run:
+        present: run
+        preterit: ran
+        participe: run
+        traduction: 'courir'
+        phonetique: ''
+        irregular: true
+    saw:
+        present: saw
+        preterit: sawed
+        participe: sawn
+        traduction: 'scier'
+        phonetique: ''
+        irregular: true
+    say:
+        present: say
+        preterit: said
+        participe: said
+        traduction: 'dire'
+        phonetique: ''
+        irregular: true
+    see:
+        present: see
+        preterit: saw
+        participe: seen
+        traduction: 'voir'
+        phonetique: ''
+        irregular: true
+    seek:
+        present: seek
+        preterit: sought
+        participe: sought
+        traduction: 'chercher'
+        phonetique: ''
+        irregular: true
+    sell:
+        present: sell
+        preterit: sold
+        participe: sold
+        traduction: 'vendre'
+        phonetique: ''
+        irregular: true
+    send:
+        present: send
+        preterit: sent
+        participe: sent
+        traduction: 'envoyer'
+        phonetique: ''
+        irregular: true
+    set:
+        present: set
+        preterit: set
+        participe: set
+        traduction: 'fiwer'
+        phonetique: ''
+        irregular: true
+    sew:
+        present: sew
+        preterit: sewed
+        participe: sewn
+        traduction: 'coudre'
+        phonetique: ''
+        irregular: true
+    shake:
+        present: shake
+        preterit: shook
+        participe: shaken
+        traduction: 'secouer'
+        phonetique: ''
+        irregular: true
+    shear:
+        present: shear
+        preterit: sheared
+        participe: shorn
+        traduction: 'tondre/cisailler'
+        phonetique: ''
+        irregular: true
+    shed:
+        present: shed
+        preterit: shed
+        participe: shed
+        traduction: 'verser/répandre'
+        phonetique: ''
+        irregular: true
+    shine:
+        present: shine
+        preterit: shone
+        participe: shone
+        traduction: 'briller'
+        phonetique: ''
+        irregular: true
+    shoe:
+        present: shoe
+        preterit: shod
+        participe: shod
+        traduction: 'ferrer/chausser'
+        phonetique: ''
+        irregular: true
+    shoot:
+        present: shoot
+        preterit: shot
+        participe: shot
+        traduction: 'tirer un projectile/tuer/filmer'
+        phonetique: ''
+        irregular: true
+    show:
+        present: show
+        preterit: showed
+        participe: shown
+        traduction: 'montrer'
+        phonetique: ''
+        irregular: true
+    shrink:
+        present: shrink
+        preterit: shrank
+        participe: shrunk
+        traduction: 'rétrécir'
+        phonetique: ''
+        irregular: true
+    shut:
+        present: shut
+        preterit: shut
+        participe: shut
+        traduction: 'fermer'
+        phonetique: ''
+        irregular: true
+    sing:
+        present: sing
+        preterit: sang
+        participe: sung
+        traduction: 'chanter'
+        phonetique: ''
+        irregular: true
+    sink:
+        present: sink
+        preterit: sank
+        participe: sunk
+        traduction: 'couler'
+        phonetique: ''
+        irregular: true
+    sit:
+        present: sit
+        preterit: sat
+        participe: sat
+        traduction: 'être assis'
+        phonetique: ''
+        irregular: true
+    sleep:
+        present: sleep
+        preterit: slept
+        participe: slept
+        traduction: 'dormir'
+        phonetique: ''
+        irregular: true
+    slide:
+        present: slide
+        preterit: slid
+        participe: slid
+        traduction: 'glisser'
+        phonetique: ''
+        irregular: true
+    sling:
+        present: sling
+        preterit: slung
+        participe: slung
+        traduction: 'lancer fort'
+        phonetique: ''
+        irregular: true
+    slink:
+        present: slink
+        preterit: slunk
+        participe: slunk
+        traduction: 'aller furtivement'
+        phonetique: ''
+        irregular: true
+    slit:
+        present: slit
+        preterit: slit
+        participe: slit
+        traduction: 'se fendre/inciser'
+        phonetique: ''
+        irregular: true
+    smell:
+        present: smell
+        preterit: smelt
+        participe: smelt
+        traduction: 'sentir/flairer'
+        phonetique: ''
+        irregular: true
+    sow:
+        present: sow
+        preterit: sowed
+        participe: sown
+        traduction: 'semer'
+        phonetique: ''
+        irregular: true
+    speak:
+        present: speak
+        preterit: spoke
+        participe: spoken
+        traduction: 'briller'
+        phonetique: ''
+        irregular: true
+    speed:
+        present: speed
+        preterit: sped
+        participe: sped
+        traduction: 'aller très vite'
+        phonetique: ''
+        irregular: true
+    spell:
+        present: spell
+        preterit: spetl
+        participe: spetl
+        traduction: 'épeler/orthographier'
+        phonetique: ''
+        irregular: true
+    spend:
+        present: spend
+        preterit: spent
+        participe: spent
+        traduction: 'dépenser'
+        phonetique: ''
+        irregular: true
+    spill:
+        present: spill
+        preterit: spilt
+        participe: spilt
+        traduction: 'renverser un liquide'
+        phonetique: ''
+        irregular: true
+    spit:
+        present: spit
+        preterit: spat
+        participe: spat
+        traduction: 'cracher'
+        phonetique: ''
+        irregular: true
+    split:
+        present: split
+        preterit: split
+        participe: split
+        traduction: 'fendre'
+        phonetique: ''
+        irregular: true
+    spoil:
+        present: spoil
+        preterit: spoilt
+        participe: spoilt
+        traduction: 'gâcher/gâter'
+        phonetique: ''
+        irregular: true
+    spread:
+        present: spread
+        preterit: spread
+        participe: spread
+        traduction: 'répandre'
+        phonetique: ''
+        irregular: true
+    spring:
+        present: spring
+        preterit: sprang
+        participe: sprung
+        traduction: 'jaillir/bondir'
+        phonetique: ''
+        irregular: true
+    stand:
+        present: stand
+        preterit: stood
+        participe: stood
+        traduction: 'être debout'
+        phonetique: ''
+        irregular: true
+    steal:
+        present: steal
+        preterit: stole
+        participe: stolen
+        traduction: 'voler/dérober'
+        phonetique: ''
+        irregular: true
+    stick:
+        present: stick
+        preterit: stuck
+        participe: stuck
+        traduction: 'coller'
+        phonetique: ''
+        irregular: true
+    sting:
+        present: sting
+        preterit: stang
+        participe: stunk
+        traduction: 'piquer'
+        phonetique: ''
+        irregular: true
+    stink:
+        present: stink
+        preterit: stank
+        participe: stank
+        traduction: 'puer'
+        phonetique: ''
+        irregular: true
+    stride:
+        present: stride
+        preterit: strode
+        participe: stridden
+        traduction: 'marcher à grands pas'
+        phonetique: ''
+        irregular: true
+    strike:
+        present: strike
+        preterit: struck
+        participe: struck
+        traduction: 'frapper'
+        phonetique: ''
+        irregular: true
+    string:
+        present: string
+        preterit: strung
+        participe: strung
+        traduction: 'ficeler'
+        phonetique: ''
+        irregular: true
+    strive:
+        present: strive
+        preterit: strove
+        participe: striven
+        traduction: 's''efforcer'
+        phonetique: ''
+        irregular: true
+    swear:
+        present: swear
+        preterit: swore
+        participe: sworn
+        traduction: 'jurer'
+        phonetique: ''
+        irregular: true
+    sweep:
+        present: sweep
+        preterit: swept
+        participe: swept
+        traduction: 'balayer'
+        phonetique: ''
+        irregular: true
+    swell:
+        present: swell
+        preterit: swelled
+        participe: swollen
+        traduction: 'enfler'
+        phonetique: ''
+        irregular: true
+    swim:
+        present: swim
+        preterit: swam
+        participe: swum
+        traduction: 'nager'
+        phonetique: ''
+        irregular: true
+    swing:
+        present: swing
+        preterit: swung
+        participe: swung
+        traduction: 'se balancer'
+        phonetique: ''
+        irregular: true
+    teach:
+        present: teach
+        preterit: taught
+        participe: taught
+        traduction: 'enseigner'
+        phonetique: ''
+        irregular: true
+    tear:
+        present: tear
+        preterit: tore
+        participe: torn
+        traduction: 'déchirer'
+        phonetique: ''
+        irregular: true
+    tell:
+        present: tell
+        preterit: told
+        participe: told
+        traduction: 'parler'
+        phonetique: ''
+        irregular: true
+    think:
+        present: think
+        preterit: thought
+        participe: thought
+        traduction: 'penser'
+        phonetique: ''
+        irregular: true
+    throw:
+        present: throw
+        preterit: threw
+        participe: thrown
+        traduction: 'jeter'
+        phonetique: ''
+        irregular: true
+    thrust:
+        present: thrust
+        preterit: thrust
+        participe: thrust
+        traduction: 'enfoncer'
+        phonetique: ''
+        irregular: true
+    tread:
+        present: tread
+        preterit: trod
+        participe: trodden
+        traduction: 'piétiner quelque chose'
+        phonetique: ''
+        irregular: true
+    understand:
+        present: understand
+        preterit: understood
+        participe: understood
+        traduction: 'comprendre'
+        phonetique: ''
+        irregular: true
+    wake:
+        present: wake
+        preterit: woke
+        participe: woken
+        traduction: '(se) réveiller'
+        phonetique: ''
+        irregular: true
+    wear:
+        present: wear
+        preterit: wore
+        participe: worn
+        traduction: 'porter (des habits)'
+        phonetique: ''
+        irregular: true
+    weave:
+        present: weave
+        preterit: wove
+        participe: woven
+        traduction: 'tisser'
+        phonetique: ''
+        irregular: true
+    weep:
+        present: weep
+        preterit: wept
+        participe: wept
+        traduction: 'pleurer'
+        phonetique: ''
+        irregular: true
+    win:
+        present: win
+        preterit: won
+        participe: won
+        traduction: 'gagner'
+        phonetique: ''
+        irregular: true
+    wind:
+        present: wind
+        preterit: wound
+        participe: wound
+        traduction: 'enrouler'
+        phonetique: ''
+        irregular: true
+    wring:
+        present: wring
+        preterit: wrung
+        participe: wrung
+        traduction: 'tordre'
+        phonetique: ''
+        irregular: true
+    write:
+        present: write
+        preterit: wrote
+        participe: written
+        traduction: 'écrire'
+        phonetique: ''
+        irregular: true

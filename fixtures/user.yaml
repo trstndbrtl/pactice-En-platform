@@ -1,0 +1,41 @@
+App\Entity\User:
+    user1:
+        email: fiodor@mm.fr
+        roles: ['ROLE_ADMIN']
+        username: 'fiodor-dostoievski'
+        name: 'Dostoïevski'
+        forname: 'fiodor'
+        status: true
+        password: '\$argon2i\$v=19\$m=1024,t=2,p=2\$MWQ3cVhrY2RQMHFkL2h4Tg\$YbQm02+/K+ej7OwQeR+vFZWY6NQ6gL6PkNGPS5OZgL4' #123456
+    user2:
+        email: leon@mm.fr
+        roles: ['ROLE_EDITO']
+        username: 'leon-tolstoi'
+        name: 'Tolstoï'
+        forname: 'Léon'
+        status: true
+        password: '\$argon2i\$v=19\$m=1024,t=2,p=2\$MWQ3cVhrY2RQMHFkL2h4Tg\$YbQm02+/K+ej7OwQeR+vFZWY6NQ6gL6PkNGPS5OZgL4' #123456
+    user3:
+        email: nicolas@mm.fr
+        roles: ['ROLE_MEDIATOR']
+        username: 'nicolas-gogol'
+        name: 'Gogol'
+        forname: 'Nicolas'
+        status: true
+        password: '\$argon2i\$v=19\$m=1024,t=2,p=2\$MWQ3cVhrY2RQMHFkL2h4Tg\$YbQm02+/K+ej7OwQeR+vFZWY6NQ6gL6PkNGPS5OZgL4' #123456
+    user4:
+        email: alexandre@mm.fr
+        roles: ['ROLE_USER']
+        username: 'alexandre-pouchkine'
+        name: 'Pouchkine'
+        forname: 'Alexandre'
+        status: true
+        password: '\$argon2i\$v=19\$m=1024,t=2,p=2\$MWQ3cVhrY2RQMHFkL2h4Tg\$YbQm02+/K+ej7OwQeR+vFZWY6NQ6gL6PkNGPS5OZgL4' #123456
+    user5:
+        email: anton@mm.fr
+        roles: ['ROLE_EDITO']
+        username: anton-tchekhov
+        name: 'Tchekhov'
+        forname: 'Anton'
+        status: true
+        password: '\$argon2i\$v=19\$m=1024,t=2,p=2\$MWQ3cVhrY2RQMHFkL2h4Tg\$YbQm02+/K+ej7OwQeR+vFZWY6NQ6gL6PkNGPS5OZgL4' #123456
