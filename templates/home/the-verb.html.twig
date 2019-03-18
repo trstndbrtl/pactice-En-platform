@@ -1,0 +1,504 @@
+{% if verb %}
+    {% set pronoms = ['I', 'you', 'she', 'we', 'you', 'they'] %}
+    <div id="een-main-wrapper" class="uk-card uk-card-default uk-card-body" style="z-index: 1;">
+        {# Information header #}
+        <div class="uk-width-1-1@s uk-grid-match uk-grid-small uk-margin-small-bottom uk-flex uk-flex-bottom" uk-grid uk-grid uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 50">
+            <div class="uk-width-1-3 uk-width-1-3@s uk-width-auto@m uk-text-left">
+                <h1>{{ page_title }}</h1>
+            </div>
+            <div class="uk-width-1-3 uk-width-1-3@s uk-width-auto@m">
+                <b>{{ verb.traduction }}</b>
+                {# <sub>Preterit</sub>        #}
+            </div>
+        </div>
+        {# Information Element #}
+        <div class="uk-width-1-1@s uk-grid-match uk-grid-small uk-margin-small-bottom" uk-grid uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 100">
+            <div class="uk-width-1-3 uk-width-1-3@s uk-width-auto@m">
+                <b>{{ verb.present }}</b>
+                <sub>Présent</sub>    
+            </div>
+            <div class="uk-width-1-3 uk-width-1-3@s uk-width-auto@m">
+                <b>{{ verb.preterit }}</b>
+                <sub>Preterit</sub>       
+            </div>
+            <div class="uk-width-1-3 uk-width-1-3@s uk-width-auto@m">
+                <b>{{ verb.participepasse }}</b>
+                <sub>Participe passé</sub>
+            </div>
+            <div class="uk-width-1-3 uk-width-1-3@s uk-width-auto@m">
+                <b>To {{ verb.present }}</b>
+                <sub>Infitinif</sub>
+            </div>
+            <div class="uk-width-1-3 uk-width-1-3@s uk-width-auto@m">
+                <b>{{ verb.participepresent }}</b>
+                <sub>Participe présent</sub>
+            </div>
+        </div>
+        {# Body Element #}
+        <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-3@l uk-child-width-1-4@xl uk-text-left uk-grid-small uk-margin-large-top" 
+            uk-grid="masonry: true"
+            uk-grid uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 100">
+            {# Present #}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Present</h4>
+                    {# <a class="speech-synth-all" href="#" data-id="present">All</a> #}
+                    <div id="present">
+                        <div>
+                            {% for pronom in pronoms %}
+                                {% if verb.present == 'be' %}
+                                    {# process be vebs #}
+                                    {% if pronom == 'I' %}
+                                        <a class="speech-synth"
+                                            href="#"
+                                            data-loop="{{ loop.index }}"
+                                            data-temps="present"
+                                            data-pronom="{{ pronom }}"
+                                        >{% spaceless %}
+                                            <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                            <span data-elword="am-{{ loop.index }}">am</span>
+                                        {% endspaceless %}</a>
+                                    {% elseif pronom == 'she' %}
+                                        <a class="speech-synth"
+                                            href="#"
+                                            data-loop="{{ loop.index }}"
+                                            data-temps="present"
+                                            data-pronom="{{ pronom }}"
+                                        >{% spaceless %}
+                                            <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                            <span data-elword="is-{{ loop.index }}">is</span>
+                                        {% endspaceless %}</a>
+                                    {% else %}
+                                        <a class="speech-synth"
+                                            href="#"
+                                            data-loop="{{ loop.index }}"
+                                            data-temps="present"
+                                            data-pronom="{{ pronom }}"
+                                        >{% spaceless %}
+                                            <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                            <span data-elword="are-{{ loop.index }}">are</span>
+                                        {% endspaceless %}</a>
+                                    {% endif %}
+
+                                {% elseif verb.present == 'have' %}
+                                    {# process have vebs #}
+                                    {% if pronom == 'she' %}
+                                        <a class="speech-synth"
+                                            href="#"
+                                            data-loop="{{ loop.index }}"
+                                            data-temps="present"
+                                            data-pronom="{{ pronom }}"
+                                        >{% spaceless %}
+                                            <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                            <span data-elword="has-{{ loop.index }}">has</span>
+                                        {% endspaceless %}</a>
+                                    {% else %}
+                                        <a class="speech-synth"
+                                            href="#"
+                                            data-loop="{{ loop.index }}"
+                                            data-temps="present"
+                                            data-pronom="{{ pronom }}"
+                                        >{% spaceless %}
+                                            <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                            <span data-elword="have-{{ loop.index }}">have</span>
+                                        {% endspaceless %}</a>
+                                    {% endif %}
+                                {% else %}
+                                    {# process others vebs #}
+                                    {% if pronom == 'she' %}
+                                        {% if verb.present|last == 'y' %}
+                                            <a class="speech-synth"
+                                                href="#"
+                                                data-loop="{{ loop.index }}"
+                                                data-temps="present"
+                                                data-pronom="{{ pronom }}"
+                                            >{% spaceless %}
+                                                <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                                <span data-elword="{{ verb.present }}ies-{{ loop.index }}">{{ verb.present }}ies</span>
+                                            {% endspaceless %}</a>
+                                        {% elseif verb.present ends with 's' or verb.present ends with 'x' or verb.present ends with 'o' or verb.present ends with 'ch' or verb.present ends with 'sh' %}
+                                            <a class="speech-synth"
+                                                href="#"
+                                                data-loop="{{ loop.index }}"
+                                                data-temps="present"
+                                                data-pronom="{{ pronom }}"
+                                            >{% spaceless %}
+                                                <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                                <span data-elword="{{ verb.present }}es-{{ loop.index }}">{{ verb.present }}es</span>
+                                            {% endspaceless %}</a>
+                                        {% elseif verb.present ends with 'ze' %}
+                                            <a class="speech-synth"
+                                                href="#"
+                                                data-loop="{{ loop.index }}"
+                                                data-temps="present"
+                                                data-pronom="{{ pronom }}"
+                                            >{% spaceless %}
+                                                <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                                <span data-elword="{{ verb.present }}s-{{ loop.index }}">{{ verb.present }}s</span>
+                                            {% endspaceless %}</a> 
+                                        {% else %}
+                                            <a class="speech-synth"
+                                                href="#"
+                                                data-loop="{{ loop.index }}"
+                                                data-temps="present"
+                                                data-pronom="{{ pronom }}"
+                                            >{% spaceless %}
+                                                <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                                <span data-elword="{{ verb.present }}s-{{ loop.index }}">{{ verb.present }}s</span>
+                                            {% endspaceless %}</a>
+                                        {% endif %}
+                                    {% else %}
+                                        <a class="speech-synth"
+                                            href="#"
+                                            data-loop="{{ loop.index }}"
+                                            data-temps="present"
+                                            data-pronom="{{ pronom }}"
+                                        >{% spaceless %}
+                                            <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                            <span data-elword="{{ verb.present }}-{{ loop.index }}">{{ verb.present }}</span>
+                                        {% endspaceless %}</a>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# Present continuous #}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Present continuous</h4>
+                    {# <a class="speech-synth-all" href="#" data-id="present-continuous">All</a> #}
+                    <div id="present-continuous">
+                        <div>
+                            {% for pronom in pronoms %}
+                                {% if pronom == 'I' %}
+                                    <a class="speech-synth"
+                                        href="#"
+                                        data-loop="{{ loop.index }}"
+                                        data-temps="present-continuous"
+                                        data-pronom="{{ pronom }}"
+                                    >{% spaceless %}
+                                        <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                        <span data-elword="am-{{ loop.index }}">am </span>
+                                        <span data-elword="{{ verb.participepresent }}-{{ loop.index }}">{{ verb.participepresent }}</span>
+                                    {% endspaceless %}</a>
+                                {% elseif pronom == 'she' %}
+                                    <a class="speech-synth"
+                                        href="#"
+                                        data-loop="{{ loop.index }}"
+                                        data-temps="present-continuous"
+                                        data-pronom="{{ pronom }}"
+                                    >{% spaceless %}
+                                        <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                        <span data-elword="is-{{ loop.index }}">is </span>
+                                        <span data-elword="{{ verb.participepresent }}-{{ loop.index }}">{{ verb.participepresent }}</span>
+                                    {% endspaceless %}</a>
+                                {% else %}
+                                    <a class="speech-synth"
+                                        href="#"
+                                        data-loop="{{ loop.index }}"
+                                        data-temps="present-continuous"
+                                        data-pronom="{{ pronom }}"
+                                    >{% spaceless %}
+                                        <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                        <span data-elword="are-{{ loop.index }}">are </span>
+                                        <span data-elword="{{ verb.participepresent }}-{{ loop.index }}">{{ verb.participepresent }}</span>
+                                    {% endspaceless %}</a>
+                                {% endif %}
+
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# Present perfect #}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Present perfect</h4>
+                    {# <a class="speech-synth-all" href="#" data-id="present-perfect">All</a> #}
+                    <div id="present-perfect">
+                        <div>
+                            {% for pronom in pronoms %}
+                                {% if pronom == 'she' %}
+                                    <a class="speech-synth"
+                                        href="#"
+                                        data-loop="{{ loop.index }}"
+                                        data-temps="present-perfect"
+                                        data-pronom="{{ pronom }}"
+                                    >{% spaceless %}
+                                        <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                        <span data-elword="has-{{ loop.index }}">has </span>
+                                        <span data-elword="{{ verb.participepasse }}-{{ loop.index }}">{{ verb.participepasse }}</span>
+                                        {% endspaceless %}</a>
+                                {% else %}
+                                    <a class="speech-synth"
+                                        href="#"
+                                        data-loop="{{ loop.index }}"
+                                        data-temps="present-perfect"
+                                        data-pronom="{{ pronom }}"
+                                    >{% spaceless %}
+                                        <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                        <span data-elword="have-{{ loop.index }}">have </span>
+                                        <span data-elword="{{ verb.participepasse }}-{{ loop.index }}">{{ verb.participepasse }}</span>
+                                    {% endspaceless %}</a>
+                                {% endif %}
+                                
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# Present perfect continuous #}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Present perfect continuous</h4>
+                    {# <a class="speech-synth-all" href="#" data-id="present-perfect-continuous">All</a> #}
+                    <div id="present-perfect-continuous">
+                        <div>
+                            {% for pronom in pronoms %}
+                                <a class="speech-synth"
+                                    href="#"
+                                    data-loop="{{ loop.index }}"
+                                    data-temps="present-perfect-continuous"
+                                    data-pronom="{{ pronom }}"
+                                >{% spaceless %}
+                                    <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                    <span data-elword="have-{{ loop.index }}">have </span>
+                                    <span data-elword="been-{{ loop.index }}">been </span>
+                                    <span data-elword="{{ verb.participepresent }}-{{ loop.index }}">{{ verb.participepresent }}</span>
+                                {% endspaceless %}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# Preterit #}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Preterit</h4>
+                    {# <a class="speech-synth-all" href="#" data-id="preterit">All</a> #}
+                    <div id="preterit">
+                        <div>
+                            {% for pronom in pronoms %}
+                                {% if verb.present == 'be' %}
+                                    {% if pronom == 'I' or pronom == 'she' %}
+                                        <a class="speech-synth"
+                                            href="#"
+                                            data-loop="{{ loop.index }}"
+                                            data-temps="preterit"
+                                            data-pronom="{{ pronom }}"
+                                        >{% spaceless %}
+                                            <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                            <span data-elword="{{ verb.preterit }}-{{ loop.index }}">{{ verb.preterit }}</span>
+                                        {% endspaceless %}</a>
+                                    {% else %}
+                                        <a class="speech-synth"
+                                            href="#"
+                                            data-loop="{{ loop.index }}"
+                                            data-temps="preterit"
+                                            data-pronom="{{ pronom }}"
+                                        >{% spaceless %}
+                                            <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                            <span data-elword="were-{{ loop.index }}">were</span>
+                                        {% endspaceless %}</a>
+                                    {% endif %}
+                                {% else %}
+                                    <a class="speech-synth"
+                                        href="#"
+                                        data-loop="{{ loop.index }}"
+                                        data-temps="preterit"
+                                        data-pronom="{{ pronom }}"
+                                    >{% spaceless %}
+                                        <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                        <span data-elword="{{ verb.preterit }}-{{ loop.index }}">{{ verb.preterit }}</span>
+                                    {% endspaceless %}</a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# Past continuous #}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Past continuous</h4>
+                    {# <a class="speech-synth-all" href="#" data-id="past-continuous">All</a> #}
+                    <div id="past-continuous">
+                        <div>
+                            {% for pronom in pronoms %}
+                                {% if pronom == 'I' or pronom == 'she' %}
+                                    <a class="speech-synth"
+                                        href="#"
+                                        data-loop="{{ loop.index }}"
+                                        data-temps="past-continuous"
+                                        data-pronom="{{ pronom }}"
+                                    >{% spaceless %}
+                                        <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                        <span data-elword="was-{{ loop.index }}">was </span>
+                                        <span data-elword="{{ verb.participepresent }}-{{ loop.index }}">{{ verb.participepresent }}</span>
+                                    {% endspaceless %}</a>
+                                {% else %}
+                                    <a class="speech-synth"
+                                        href="#"
+                                        data-loop="{{ loop.index }}"
+                                        data-temps="past-continuous"
+                                        data-pronom="{{ pronom }}"
+                                    >{% spaceless %}
+                                        <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                        <span data-elword="were-{{ loop.index }}">were </span>
+                                        <span data-elword="{{ verb.participepresent }}-{{ loop.index }}">{{ verb.participepresent }}</span>
+                                    {% endspaceless %}</a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# Past perfect #}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Past perfect</h4>
+                    {# <a class="speech-synth-all" href="#" data-id="past-perfect">All</a> #}
+                    <div id="past-perfect">
+                        <div>
+                            {% for pronom in pronoms %}
+                                <a class="speech-synth"
+                                    href="#"
+                                    data-loop="{{ loop.index }}"
+                                    data-temps="past-perfect"
+                                    data-pronom="{{ pronom }}"
+                                >{% spaceless %}
+                                    <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                    <span data-elword="had-{{ loop.index }}">had </span>
+                                    <span data-elword="{{ verb.participepasse }}-{{ loop.index }}">{{ verb.participepasse }}</span>
+                                {% endspaceless %}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# Past perfect continuous #}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Past perfect continuous</h4>
+                    {# <a class="speech-synth-all" href="#" data-id="past-perfect-continuous">All</a> #}
+                    <div id="past-perfect-continuous">
+                        <div>
+                            {% for pronom in pronoms %}
+                                <a class="speech-synth"
+                                    href="#"
+                                    data-loop="{{ loop.index }}"
+                                    data-temps="past-perfect-continuous"
+                                    data-pronom="{{ pronom }}"
+                                >{% spaceless %}
+                                    <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                    <span data-elword="had-{{ loop.index }}">had </span>
+                                    <span data-elword="been-{{ loop.index }}">been </span>
+                                    <span data-elword="{{ verb.participepresent }}-{{ loop.index }}">{{ verb.participepresent }}</span>
+                                {% endspaceless %}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# Future #}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Future</h4>
+                    {# <a class="speech-synth-all" href="#" data-id="futur-perfect">All</a> #}
+                    <div id="futur">
+                        <div>
+                            {% for pronom in pronoms %}
+                                <a class="speech-synth"
+                                    href="#"
+                                    data-loop="{{ loop.index }}"
+                                    data-temps="futur"
+                                    data-pronom="{{ pronom }}"
+                                >{% spaceless %}
+                                    <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                    <span data-elword="will-{{ loop.index }}">will </span>
+                                    <span data-elword="{{ verb.present }}-{{ loop.index }}">{{ verb.present }}</span>
+                                {% endspaceless %}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# Future continuous #}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Future continuous</h4>
+                    {# <a class="speech-synth-all" href="#" data-id="futur-perfect">All</a> #}
+                    <div id="futur-continuous">
+                        <div>
+                            {% for pronom in pronoms %}
+                                <a class="speech-synth"
+                                    href="#"
+                                    data-loop="{{ loop.index }}"
+                                    data-temps="futur-continuous"
+                                    data-pronom="{{ pronom }}"
+                                >{% spaceless %}
+                                    <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                    <span data-elword="will-{{ loop.index }}">will </span>
+                                    <span data-elword="be-{{ loop.index }}">be </span>
+                                    <span data-elword="{{ verb.participepresent }}-{{ loop.index }}">{{ verb.participepresent }}</span>
+                                {% endspaceless %}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# Future perfect #}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Future perfect</h4>
+                    {# <a class="speech-synth-all" href="#" data-id="futur-perfect">All</a> #}
+                    <div id="futur-perfect">
+                        <div>
+                            {% for pronom in pronoms %}
+                                <a class="speech-synth"
+                                    href="#"
+                                    data-loop="{{ loop.index }}"
+                                    data-temps="futur-perfect"
+                                    data-pronom="{{ pronom }}"
+                                >{% spaceless %}
+                                    <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span>
+                                    <span data-elword="will-{{ loop.index }}">will </span>
+                                    <span data-elword="have-{{ loop.index }}">have </span>
+                                    <span data-elword="{{ verb.participepasse }}-{{ loop.index }}">{{ verb.participepasse }}</span>
+                                {% endspaceless %}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# Futur perfect continuous #}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Futur perfect continuous</h4>     
+                    <div>
+                        {# <a class="speech-synth-all" href="#" data-id="futur-perfect-continuous">All</a> #}
+                        <div>
+                            {% for pronom in pronoms %}
+                            {# {% if loop.index == 1 or loop.index == 2 or loop.index == 3 %} #}
+                                <a class="speech-synth"
+                                    href="#" data-loop="{{ loop.index }}"
+                                    data-temps="futur-perfect-continuous"
+                                    data-pronom="{{ pronom }}"
+                                >{% spaceless %}
+                                    <span data-elword="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span> 
+                                    <span data-elword="will-{{ loop.index }}">will </span> 
+                                    <span data-elword="have-{{ loop.index }}">have </span> 
+                                    <span data-elword="been-{{ loop.index }}">been </span> 
+                                    <span data-elword="{{ verb.participepresent }}-{{ loop.index }}">{{ verb.participepresent }}</span>
+                                {% endspaceless %}</a>
+                            {# {% endif %} #}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}

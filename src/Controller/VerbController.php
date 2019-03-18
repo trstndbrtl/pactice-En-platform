@@ -12,10 +12,13 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 
+/**
+ * @Route("/playground")
+ */
 class VerbController extends AbstractController
 {
     /**
-     * @Route("/verb", name="app_list_verb")
+     * @Route("/all-verbs", name="app_list_verb")
      */
     public function listVerb(VerbRepository $vr)
     {
@@ -27,7 +30,18 @@ class VerbController extends AbstractController
     }
 
     /**
-     * @Route("/verb/ajouter", name="app_add_verb")
+     * @Route("/the-verb/{present}", name="app_the_verb")
+     */
+    public function theVerb(Verb $verb)
+    {
+        return $this->render('verb/verb.html.twig', [
+            'page_title' => 'Verbe',
+            'verb' => $verb
+        ]);
+    }
+
+    /**
+     * @Route("/verbs/add", name="app_add_verb")
      * @Security("is_granted('ROLE_USER')")
      */
     public function addVerb(Request $request, EntityManagerInterface $em)
@@ -56,7 +70,7 @@ class VerbController extends AbstractController
     }
 
     /**
-     * @Route("/verb/editer/{id}", name="app_edit_verb")
+     * @Route("/verbs/edit/{id}", name="app_edit_verb")
      * @Security("is_granted('ROLE_USER')")
      */
     public function editVerb(Verb $verb, EntityManagerInterface $em, Request $request)
@@ -86,7 +100,7 @@ class VerbController extends AbstractController
     }
 
     /**
-     * @Route("/verb/supprimer/{id}", name="app_delete_verb")
+     * @Route("/verbs/remove/{id}", name="app_delete_verb")
      * @Security("is_granted('ROLE_USER')")
      */
     public function deleteVerb(Verb $verb, EntityManagerInterface $em)
@@ -94,5 +108,5 @@ class VerbController extends AbstractController
 		$em->remove($verb);
 		$em->flush();
 		return $this->redirectToRoute('app_list_verb');
-	}
+    }
 }

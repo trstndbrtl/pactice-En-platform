@@ -1,9 +1,97 @@
 {% extends 'base.html.twig' %}
-{% block title %}{{ controller_name }} !{% endblock %}
+{% block title %}{{ page_title }} verbes!{% endblock %}
 {% block body %}
-<div class="uk-section">
-    <div class="uk-container uk-container-small">
-        <h1>Hello {{ controller_name }}! ✅</h1>
+{% set pronoms = ['I', 'you', 'he she it', 'we', 'you', 'they'] %}
+<div class="uk-section uk-padding-remove">
+    <div class="uk-container uk-container-expand uk-padding-remove">
+        <div class="uk-grid-collapse" uk-grid>
+            {# verb irregular #}
+            <div id="een-sidebar-one" class="een-sidebar-toggle uk-width-1-3@s uk-width-1-6@m">
+                <div class="mm-sidebar-one" style="z-index: 1;" uk-height-viewport uk-sticky="offset: 80;media: @m">
+                    <div class="mm-sidebar-one-wrapper uk-background-muted uk-height-1-1">
+                        <div class="uk-card uk-card-default uk-card-body uk-height-1-1"
+                            uk-overflow-auto="selContainer: .mm-sidebar-one; selContent: .mm-sidebar-one-wrapper"
+                        >
+                            <h3 class="uk-margin-remove-bottom">Irréguliers</h3>
+                            <div id="mm-sidebar-one-wrapper-element" uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 100">
+                                {# Card irregular Verb #}
+                                {% for verbI in verbsIrregular %}
+                                <div class="uk-child-width-1-1@s uk-grid-collapse" uk-grid>
+                                    <div class="uk-visible-toggle uk-inline" tabindex="-1">
+                                        <div uk-grid class="uk-grid-collapse uk-flex-middle">
+                                            <a href="{{ path('app_one_verb', { 'present': verbI.present }) }}" 
+                                                class="mm-load-page uk-width-expand"
+                                                dataurl="{{ url('app_load_the_verb', { 'present': verbI.present }) }}"
+                                                dataname="{{ verbI.present }}"
+                                            >
+                                                <dt class="mm-load-page">{{ verbI.present }}</dt>
+                                                <sup class="mm-load-page uk-text-truncate">{{ verbI.traduction }}</sup>
+                                            </a>
+                                            {% if is_granted('ROLE_USER') %}
+                                                <div class="uk-position-center-right uk-overlay uk-align-right uk-padding-remove">
+                                                    <ul class="uk-invisible-hover uk-iconnav">
+                                                        <li><a href="{{ path('app_edit_verb', { 'id': verbI.id }) }}" uk-icon="icon: pencil"></a></li>
+                                                        <li><a href="{{ path('app_delete_verb', { 'id': verbI.id }) }}" uk-icon="icon: trash"></a></li>
+                                                    </ul>
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                {% endfor %}
+                                <a class="load-more-verb uk-button uk-button-default" dataregular="one" dataurl="{{ url('app_load_more_verb', { 'regular': 'irregular', 'limit': 40, 'offset': 40 }) }}" href="#">+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# verb Rugular #}
+            <div id="een-sidebar-two" class="een-sidebar-toggle uk-width-1-3@s uk-width-1-6@m">
+                <div class="mm-sidebar-two" style="z-index: 1;" uk-height-viewport uk-sticky="offset: 80;media: @m">
+                    <div class="mm-sidebar-two-wrapper uk-background-muted uk-height-1-1">
+                        <div class="uk-card uk-card-default uk-card-body uk-height-1-1" 
+                            uk-overflow-auto="selContainer: .mm-sidebar-two; selContent: .mm-sidebar-two-wrapper"
+                        >
+                            <h3 class="uk-margin-remove-bottom">Réguliers</h3>
+                            <div id="mm-sidebar-two-wrapper-element" uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 100">
+                                {# Card Regular Verb #}
+                                {% for verbR in verbsRegular %}
+                                <div class="uk-child-width-1-1@s uk-grid-collapse" uk-grid>
+                                    <div class="uk-visible-toggle uk-inline" tabindex="-1">
+                                        <div uk-grid class="uk-grid-collapse uk-flex-middle">
+                                            <a href="{{ path('app_one_verb', { 'present': verbR.present }) }}" 
+                                                class="mm-load-page uk-width-expand"
+                                                dataurl="{{ url('app_load_the_verb', { 'present': verbR.present }) }}"
+                                                dataname="{{ verbR.present }}"
+                                            >
+                                                <dt class="mm-load-page">{{ verbR.present }}</dt>
+                                                <sup class="mm-load-page uk-text-truncate">{{ verbR.traduction }}</sup>
+                                            </a>
+                                            {% if is_granted('ROLE_USER') %}
+                                                <div class="uk-position-center-right uk-overlay uk-align-right uk-padding-remove">
+                                                    <ul class="uk-invisible-hover uk-iconnav">
+                                                        <li><a href="{{ path('app_edit_verb', { 'id': verbIrregular.id }) }}" uk-icon="icon: pencil"></a></li>
+                                                        <li><a href="{{ path('app_delete_verb', { 'id': verbR.id }) }}" uk-icon="icon: trash"></a></li>
+                                                    </ul>
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                {% endfor %}
+                                <a class="load-more-verb uk-button uk-button-default" dataregular="two" dataurl="{{ url('app_load_more_verb', { 'regular': 'regular', 'limit': 40, 'offset': 40 }) }}" href="#">+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# verb data #}
+            <div id="een-main" class="uk-width-expand@s">
+                {{ include('home/the-verb.html.twig', {verb : verb }) }}
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}

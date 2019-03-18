@@ -15,12 +15,11 @@
             </div>
             {# element form participe #}
             <div class="uk-width-1-4@s">
-                {{ form_widget(form.participe, { 'attr': { 'class': 'uk-input', 'placeholder': 'Participe passé' }} ) }}
+                {{ form_widget(form.participepasse, { 'attr': { 'class': 'uk-input', 'placeholder': 'Participe passé' }} ) }}
             </div>
-            {# element form irregular #}
+            {# element form participe #}
             <div class="uk-width-1-4@s">
-                {{ form_widget(form.irregular, { 'attr': { 'class': 'uk-checkbox' }} ) }}
-                {{ form_label(form.irregular ) }}
+                {{ form_widget(form.participepresent, { 'attr': { 'class': 'uk-input', 'placeholder': 'Participe passé' }} ) }}
             </div>
             {# element form traduction #}
             <div class="uk-width-1-2@s">
@@ -29,6 +28,11 @@
             {# element form phonetique #}
             <div class="uk-width-1-2@s">
                 {{ form_widget(form.phonetique, { 'attr': { 'class': 'uk-input', 'placeholder': 'Phonétique' }} ) }}
+            </div>
+            {# element form irregular #}
+            <div class="uk-width-1-4@s">
+                {{ form_widget(form.irregular, { 'attr': { 'class': 'uk-checkbox' }} ) }}
+                {{ form_label(form.irregular ) }}
             </div>
             {# element form button #}
             <div class="uk-width-1-1@s">

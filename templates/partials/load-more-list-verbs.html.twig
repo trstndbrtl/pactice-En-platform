@@ -1,0 +1,28 @@
+{% if verbs %}
+    {% for verb in verbs %}
+        <div class="uk-child-width-1-1@s uk-grid-collapse" uk-grid>
+            <div class="uk-visible-toggle uk-inline" tabindex="-1">
+                <div uk-grid class="uk-grid-collapse uk-flex-middle">
+                    <a href="{{ path('app_one_verb', { 'present': verb.present }) }}" 
+                        class="mm-load-page uk-width-expand"
+                        dataurl="{{ url('app_load_the_verb', { 'present': verb.present }) }}"
+                        dataname="{{ verb.present }}"
+                    >
+                        <dt class="mm-load-page">{{ verb.present }}</dt>
+                        <sup class="mm-load-page uk-text-truncate">{{ verb.traduction }}</sup>
+                    </a>
+                    {% if is_granted('ROLE_USER') %}
+                        <div class="uk-position-center-right uk-overlay uk-align-right uk-padding-remove">
+                            <ul class="uk-invisible-hover uk-iconnav">
+                                <li><a href="{{ path('app_edit_verb', { 'id': verb.id }) }}" uk-icon="icon: pencil"></a></li>
+                                <li><a href="{{ path('app_delete_verb', { 'id': verb.id }) }}" uk-icon="icon: trash"></a></li>
+                            </ul>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            <hr>
+        </div>
+    {% endfor %}
+    <a class="load-more-verb uk-button uk-button-default" dataregular="{{ regular == 'irregular' ? 'one' : 'two' }}"  dataurl="{{ url('app_load_more_verb', { 'regular': regular , 'limit': 40, 'offset': offset }) }}" href="#">+</a>
+{% endif %}

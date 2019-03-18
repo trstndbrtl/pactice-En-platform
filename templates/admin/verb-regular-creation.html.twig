@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ page_title }} !{% endblock %}
+{% block body %}
+<div class="uk-section">
+    <div class="uk-container uk-container-small">
+        <h1>{{ page_title }}</h1>
+        <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+            <div>
+                <ul class="uk-list uk-list-divider">
+                    <li><a class="uk-link-muted" href="{{ path('app_build_verbs', {'page': 1}) }}">create Verb Session A-C</a></li>
+                    <li><a class="uk-link-muted" href="{{ path('app_build_verbs', {'page': 2}) }}">create Verb Session C-D</a></li>
+                    <li><a class="uk-link-muted" href="{{ path('app_build_verbs', {'page': 3}) }}">create Verb Session D-H</a></li>
+                    <li><a class="uk-link-muted" href="{{ path('app_build_verbs', {'page': 4}) }}">create Verb Session H-O</a></li>
+                    <li><a class="uk-link-muted" href="{{ path('app_build_verbs', {'page': 5}) }}">create Verb Session O-S</a></li>
+                    <li><a class="uk-link-muted" href="{{ path('app_build_verbs', {'page': 6}) }}">create Verb Session S-Z</a></li>
+                </ul>
+            </div>
+            <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -2,1085 +2,1395 @@ App\Entity\Verb:
     abide:
         present: abide
         preterit: abode
-        participe: abode
+        participe_passe: abode
+        participe_present: 'aboding'
+        participe_perfect: ''
         traduction: 'rester/tolérer/demeurer'
         phonetique: ''
         irregular: true
     arise:
         present: arise
         preterit: arose
-        participe: arisen
+        participe_passe: arisen
+        participe_present: 'arising'
+        participe_perfect: ''
         traduction: 'survenir'
         phonetique: ''
         irregular: true
     awake:
         present: awake
         preterit: awoke
-        participe: awoken
+        participe_passe: awoken
+        participe_present: 'awaking'
+        participe_perfect: ''
         traduction: 'se réveiller'
         phonetique: ''
         irregular: true
     be:
         present: be
         preterit: was
-        participe: been
+        participe_passe: been
+        participe_present: 'being'
+        participe_perfect: ''
         traduction: 'être'
         phonetique: ''
         irregular: true
     bear:
         present: bear
         preterit: bore
-        participe: borne
+        participe_passe: borne
+        participe_present: 'bearing'
+        participe_perfect: ''
         traduction: 'porter/supporter/naître'
         phonetique: ''
         irregular: true
     beat:
         present: beat
         preterit: beat
-        participe: beaten
+        participe_passe: beaten
+        participe_present: 'beating'
+        participe_perfect: ''
         traduction: 'battre'
         phonetique: ''
         irregular: true
     become:
         present: become
         preterit: became
-        participe: become
+        participe_passe: become
+        participe_present: 'becoming'
+        participe_perfect: ''
         traduction: 'devenir'
         phonetique: ''
         irregular: true
     begin:
         present: begin
         preterit: began
-        participe: begun
+        participe_passe: begun
+        participe_present: 'begining'
+        participe_perfect: ''
         traduction: 'commencer'
         phonetique: ''
         irregular: true
     bend:
         present: bend
         preterit: bent
-        participe: bent
+        participe_passe: bent
+        participe_present: 'bending'
+        participe_perfect: ''
         traduction: 'fléchir/se courber'
         phonetique: ''
         irregular: true
     bet:
         present: bet
         preterit: bet
-        participe: bet
+        participe_passe: bet
+        participe_present: 'betting'
+        participe_perfect: ''
         traduction: 'parier'
         phonetique: ''
         irregular: true
     bid:
         present: bid
         preterit: bid
-        participe: bid
+        participe_passe: bid
+        participe_present: 'bidding'
+        participe_perfect: ''
         traduction: 'offrir un prix/ordonner'
         phonetique: ''
         irregular: true
     bind:
         present: bind
         preterit: bound
-        participe: bound
+        participe_passe: bound
+        participe_present: 'binding'
+        participe_perfect: ''
         traduction: 'lier/relier'
         phonetique: ''
         irregular: true
     bite:
         present: bite
         preterit: bit
-        participe: bitten
+        participe_passe: bitten
+        participe_present: 'biting'
+        participe_perfect: ''
         traduction: 'mordre'
         phonetique: ''
         irregular: true
     bleed:
         present: bleed
         preterit: bled
-        participe: bled
+        participe_passe: bled
+        participe_present: 'bleeding'
+        participe_perfect: ''
         traduction: 'saigner'
         phonetique: ''
         irregular: true
     blow:
         present: blow
         preterit: blew
-        participe: blown
+        participe_passe: blown
+        participe_present: 'blowing'
+        participe_perfect: ''
         traduction: 'souffler'
         phonetique: ''
         irregular: true
     break:
         present: break
         preterit: broke
-        participe: broken
+        participe_passe: broken
+        participe_present: 'breaking'
+        participe_perfect: ''
         traduction: 'casser'
         phonetique: ''
         irregular: true
     breed:
         present: breed
         preterit: bred
-        participe: bred
+        participe_passe: bred
+        participe_present: 'breeding'
+        participe_perfect: ''
         traduction: 'élever des animaux'
         phonetique: ''
         irregular: true
     bring:
         present: bring
         preterit: brought
-        participe: brought
+        participe_passe: brought
+        participe_present: 'bringing'
+        participe_perfect: ''
         traduction: 'apporter'
         phonetique: ''
         irregular: true
     build:
         present: build
         preterit: build
-        participe: build
+        participe_passe: build
+        participe_present: 'building'
+        participe_perfect: ''
         traduction: 'construire'
         phonetique: ''
         irregular: true
     burn:
         present: burn
         preterit: burnt
-        participe: burnt
+        participe_passe: burnt
+        participe_present: 'burning'
+        participe_perfect: ''
         traduction: 'brûler'
         phonetique: ''
         irregular: true
     burst:
         present: burst
         preterit: burst
-        participe: burst
+        participe_passe: burst
+        participe_present: 'bursting'
+        participe_perfect: ''
         traduction: 'éclater'
         phonetique: ''
         irregular: true
     buy:
         present: buy
         preterit: bought
-        participe: bought
+        participe_passe: bought
+        participe_present: 'buying'
+        participe_perfect: ''
         traduction: 'acheter'
         phonetique: ''
         irregular: true
     cast:
         present: cast
         preterit: cast
-        participe: cast
+        participe_passe: cast
+        participe_present: 'casting'
+        participe_perfect: ''
         traduction: 'jeter/distribuer (rôles)'
         phonetique: ''
         irregular: true
     choose:
         present: choose
         preterit: chose
-        participe: chosen
+        participe_passe: chosen
+        participe_present: 'choosing'
+        participe_perfect: ''
         traduction: 'acheter'
         phonetique: ''
         irregular: true
     cling:
         present: cling
         preterit: clung
-        participe: clung
+        participe_passe: clung
+        participe_present: 'clinging'
+        participe_perfect: ''
         traduction: 's''accrocher'
         phonetique: ''
         irregular: true
     come:
         present: come
         preterit: came
-        participe: come
+        participe_passe: come
+        participe_present: 'coming'
+        participe_perfect: ''
         traduction: 'venir'
         phonetique: ''
         irregular: true
     cost:
         present: cost
         preterit: cost
-        participe: cost
+        participe_passe: cost
+        participe_present: 'costing'
+        participe_perfect: ''
         traduction: 'coûter'
         phonetique: ''
         irregular: true
     creep:
         present: creep
         preterit: crept
-        participe: crept
+        participe_passe: crept
+        participe_present: 'creeping'
+        participe_perfect: ''
         traduction: 'ramper'
         phonetique: ''
         irregular: true
     catch:
         present: catch
         preterit: caught
-        participe: bcaght
+        participe_passe: bcaght
+        participe_present: 'catching'
+        participe_perfect: ''
         traduction: 'attraper'
         phonetique: ''
         irregular: true
     cut:
         present: cut
         preterit: cut
-        participe: cut
+        participe_passe: cut
+        participe_present: 'cutting'
+        participe_perfect: ''
         traduction: 'couper'
         phonetique: ''
         irregular: true
     deal:
         present: deal
         preterit: dealt
-        participe: dealt
+        participe_passe: dealt
+        participe_present: 'dealing'
+        participe_perfect: ''
         traduction: 'distribuer'
         phonetique: ''
         irregular: true
     dig:
         present: dig
         preterit: dug
-        participe: dug
+        participe_passe: dug
+        participe_present: 'digging'
+        participe_perfect: ''
         traduction: 'creuser'
         phonetique: ''
         irregular: true
     do:
         present: do
         preterit: did
-        participe: done
+        participe_passe: done
+        participe_present: 'doing'
+        participe_perfect: ''
         traduction: 'faire'
         phonetique: ''
         irregular: true
     draw:
         present: draw
         preterit: drew
-        participe: drawn
+        participe_passe: drawn
+        participe_present: 'drawing'
+        participe_perfect: ''
         traduction: 'dessiner'
         phonetique: ''
         irregular: true
     dream:
         present: dream
         preterit: dreamt
-        participe: dreamt
+        participe_passe: dreamt
+        participe_present: 'dreaming'
+        participe_perfect: ''
         traduction: 'rêver'
         phonetique: ''
         irregular: true
     drink:
         present: drink
         preterit: drank
-        participe: drunk
+        participe_passe: drunk
+        participe_present: 'drinking'
+        participe_perfect: ''
         traduction: 'boire'
         phonetique: ''
         irregular: true
     drive:
         present: drive
         preterit: drove
-        participe: driven
+        participe_passe: driven
+        participe_present: 'driving'
+        participe_perfect: ''
         traduction: 'conduire'
         phonetique: ''
         irregular: true
     dwell:
         present: dwell
         preterit: dwelt
-        participe: dwelt
+        participe_passe: dwelt
+        participe_present: 'dwelling'
+        participe_perfect: ''
         traduction: 'habiter'
         phonetique: ''
         irregular: true
     eat:
         present: eat
         preterit: ate
-        participe: eaten
+        participe_passe: eaten
+        participe_present: 'eating'
+        participe_perfect: ''
         traduction: 'manger'
         phonetique: ''
         irregular: true
     fall:
         present: fall
         preterit: fell
-        participe: fallen
+        participe_passe: fallen
+        participe_present: 'falling'
+        participe_perfect: ''
         traduction: 'tomber'
         phonetique: ''
         irregular: true
     feed:
         present: feed
         preterit: fed
-        participe: fed
+        participe_passe: fed
+        participe_present: 'feeding'
+        participe_perfect: ''
         traduction: 'nourrir'
         phonetique: ''
         irregular: true
     feel:
         present: feel
         preterit: felt
-        participe: felt
+        participe_passe: felt
+        participe_present: 'feeling'
+        participe_perfect: ''
         traduction: 'éprouver un sentiment'
         phonetique: ''
         irregular: true
     fight:
         present: fight
         preterit: fought
-        participe: fought
+        participe_passe: fought
+        participe_present: 'fighting'
+        participe_perfect: ''
         traduction: 'combattre'
         phonetique: ''
         irregular: true
     find:
         present: find
         preterit: found
-        participe: found
+        participe_passe: found
+        participe_present: 'finding'
+        participe_perfect: ''
         traduction: 'trouver'
         phonetique: ''
         irregular: true
     flee:
         present: flee
         preterit: fled
-        participe: fled
+        participe_passe: fled
+        participe_present: 'fleeing'
+        participe_perfect: ''
         traduction: 's''enfuir'
         phonetique: ''
         irregular: true
     fling:
         present: fling
         preterit: flung
-        participe: flung
+        participe_passe: flung
+        participe_present: 'flinging'
+        participe_perfect: ''
         traduction: 'jeter violemment'
         phonetique: ''
         irregular: true
     fly:
         present: fly
         preterit: flew
-        participe: flown
+        participe_passe: flown
+        participe_present: 'flying'
+        participe_perfect: ''
         traduction: 'voler'
         phonetique: ''
         irregular: true
     forbid:
         present: forbid
         preterit: forbade
-        participe: forbidden
+        participe_passe: forbidden
+        participe_present: 'forbidding'
+        participe_perfect: ''
         traduction: 'interdire'
         phonetique: ''
         irregular: true
     forget:
         present: forget
         preterit: forgot
-        participe: forgotten
+        participe_passe: forgotten
+        participe_present: 'forgetting'
+        participe_perfect: ''
         traduction: 'oublier'
         phonetique: ''
         irregular: true
     freeze:
         present: freeze
         preterit: froze
-        participe: frozen
+        participe_passe: frozen
+        participe_present: 'freezing'
+        participe_perfect: ''
         traduction: 'geler'
         phonetique: ''
         irregular: true
     get:
         present: get
         preterit: got
-        participe: got
+        participe_passe: got
+        participe_present: 'getting'
+        participe_perfect: ''
         traduction: 'obtenir'
         phonetique: ''
         irregular: true
     give:
         present: give
         preterit: gave
-        participe: given
+        participe_passe: given
+        participe_present: 'giving'
+        participe_perfect: ''
         traduction: 'donner'
         phonetique: ''
         irregular: true
     go:
         present: go
         preterit: went
-        participe: gone
+        participe_passe: gone
+        participe_present: 'going'
+        participe_perfect: ''
         traduction: 'aller'
         phonetique: ''
         irregular: true
     grind:
         present: grind
         preterit: ground
-        participe: ground
+        participe_passe: ground
+        participe_present: 'grinding'
+        participe_perfect: ''
         traduction: 'moudre'
         phonetique: ''
         irregular: true
     grow:
         present: grow
         preterit: grew
-        participe: grown
+        participe_passe: grown
+        participe_present: 'growing'
+        participe_perfect: ''
         traduction: 'grandir'
         phonetique: ''
         irregular: true
     hang:
         present: hang
         preterit: hung
-        participe: hung
+        participe_passe: hung
+        participe_present: 'hanging'
+        participe_perfect: ''
         traduction: 'pendre/accrocher'
         phonetique: ''
         irregular: true
     have:
         present: have
         preterit: had
-        participe: had
+        participe_passe: had
+        participe_present: 'having'
+        participe_perfect: ''
         traduction: 'avoir'
         phonetique: ''
         irregular: true
     hear:
         present: hear
         preterit: heard
-        participe: heard
+        participe_passe: heard
+        participe_present: 'hearing'
+        participe_perfect: ''
         traduction: 'entendre'
         phonetique: ''
         irregular: true
     hide:
         present: hide
         preterit: hid
-        participe: hidden
+        participe_passe: hidden
+        participe_present: 'hiding'
+        participe_perfect: ''
         traduction: 'se cacher'
         phonetique: ''
         irregular: true
     hit:
         present: hit
         preterit: hit
-        participe: hit
+        participe_passe: hit
+        participe_present: 'hitting'
+        participe_perfect: ''
         traduction: 'frapper/atteindre'
         phonetique: ''
         irregular: true
     hold:
         present: hold
         preterit: held
-        participe: held
+        participe_passe: held
+        participe_present: 'holding'
+        participe_perfect: ''
         traduction: 'tenir'
         phonetique: ''
         irregular: true
     hurt:
         present: hurt
         preterit: hurt
-        participe: hurt
+        participe_passe: hurt
+        participe_present: 'hurting'
+        participe_perfect: ''
         traduction: 'blesser'
         phonetique: ''
         irregular: true
     keep:
         present: keep
         preterit: kept
-        participe: kept
+        participe_passe: kept
+        participe_present: 'keeping'
+        participe_perfect: ''
         traduction: 'garder'
         phonetique: ''
         irregular: true
     kneel:
         present: kneel
         preterit: knelt
-        participe: knelt
+        participe_passe: knelt
+        participe_present: 'kneeling'
+        participe_perfect: ''
         traduction: 's''agenouiller'
         phonetique: ''
         irregular: true
     know:
         present: know
         preterit: knew
-        participe: known
+        participe_passe: known
+        participe_present: 'knowing'
+        participe_perfect: ''
         traduction: 'savoir/connaître'
         phonetique: ''
         irregular: true
     lay:
         present: lay
         preterit: laid
-        participe: laid
+        participe_passe: laid
+        participe_present: 'laying'
+        participe_perfect: ''
         traduction: 'poser à plat-étendre'
         phonetique: ''
         irregular: true
     lead:
         present: led
         preterit: led
-        participe: mener
+        participe_passe: mener
+        participe_present: 'leading'
+        participe_perfect: ''
         traduction: 'entendre'
         phonetique: ''
         irregular: true
     lean:
         present: lean
         preterit: leant
-        participe: leant
+        participe_passe: leant
+        participe_present: 'leaning'
+        participe_perfect: ''
         traduction: 's''appuyer'
         phonetique: ''
         irregular: true
     leap:
         present: leap
         preterit: leapt
-        participe: leapt
+        participe_passe: leapt
+        participe_present: 'leaping'
+        participe_perfect: ''
         traduction: 'sauter'
         phonetique: ''
         irregular: true
     learn:
         present: learn
         preterit: learnt
-        participe: learnt
+        participe_passe: learnt
+        participe_present: 'learning'
+        participe_perfect: ''
         traduction: 'apprendre'
         phonetique: ''
         irregular: true
     leave:
         present: leave
         preterit: left
-        participe: left
+        participe_passe: left
+        participe_present: 'leaving'
+        participe_perfect: ''
         traduction: 'laisser/quitter'
         phonetique: ''
         irregular: true
     lend:
         present: lend
         preterit: lent
-        participe: lent
+        participe_passe: lent
+        participe_present: 'lending'
+        participe_perfect: ''
         traduction: 'prêter'
         phonetique: ''
         irregular: true
     let:
         present: let
         preterit: let
-        participe: let
+        participe_passe: let
+        participe_present: 'letting'
+        participe_perfect: ''
         traduction: 'permettre/louer'
         phonetique: ''
         irregular: true
     lie:
         present: lie
         preterit: lay
-        participe: lain
+        participe_passe: lain
+        participe_present: 'lying'
+        participe_perfect: ''
         traduction: 'être étendu'
         phonetique: ''
         irregular: true
     light:
         present: light
         preterit: lit
-        participe: lit
+        participe_passe: lit
+        participe_present: 'lighting'
+        participe_perfect: ''
         traduction: 'allumer'
         phonetique: ''
         irregular: true
     lose:
         present: lose
         preterit: lost
-        participe: lost
+        participe_passe: lost
+        participe_present: 'losing'
+        participe_perfect: ''
         traduction: 'perdre'
         phonetique: ''
         irregular: true
     make:
         present: make
         preterit: made
-        participe: made
+        participe_passe: made
+        participe_present: 'making'
+        participe_perfect: ''
         traduction: 'faire/fabriquer'
         phonetique: ''
         irregular: true
     mean:
         present: mean
         preterit: meant
-        participe: meant
+        participe_passe: meant
+        participe_present: 'meaning'
+        participe_perfect: ''
         traduction: 'signifier'
         phonetique: ''
         irregular: true
     meet:
         present: meet
         preterit: met
-        participe: met
+        participe_passe: met
+        participe_present: 'meeting'
+        participe_perfect: ''
         traduction: 'se rencontrer'
         phonetique: ''
         irregular: true
     pay:
         present: pay
         preterit: paid
-        participe: paid
+        participe_passe: paid
+        participe_present: 'paying'
+        participe_perfect: ''
         traduction: 'payer'
         phonetique: ''
         irregular: true
     put:
         present: put
         preterit: put
-        participe: put
+        participe_passe: put
+        participe_present: 'putting'
+        participe_perfect: ''
         traduction: 'mettre'
         phonetique: ''
         irregular: true
     quit:
         present: quit
         preterit: quit
-        participe: quit
+        participe_passe: quit
+        participe_present: 'quitting'
+        participe_perfect: ''
         traduction: 'cesser'
         phonetique: ''
         irregular: true
     read:
         present: read
         preterit: read
-        participe: read
+        participe_passe: read
+        participe_present: 'reading'
+        participe_perfect: ''
         traduction: 'lire'
         phonetique: ''
         irregular: true
     rid:
         present: rid
         preterit: rid
-        participe: rid
+        participe_passe: rid
+        participe_present: 'ridding'
+        participe_perfect: ''
         traduction: 'débarrasser'
         phonetique: ''
         irregular: true
     ride:
         present: ride
         preterit: rode
-        participe: ridden
+        participe_passe: ridden
+        participe_present: 'riding'
+        participe_perfect: ''
         traduction: 'chevaucher'
         phonetique: ''
         irregular: true
     ring:
         present: ring
         preterit: rang
-        participe: rung
+        participe_passe: rung
+        participe_present: 'ringing'
+        participe_perfect: ''
         traduction: 'sonner'
         phonetique: ''
         irregular: true
     rise:
         present: rise
         preterit: rose
-        participe: risen
+        participe_passe: risen
+        participe_present: 'rising'
+        participe_perfect: ''
         traduction: 's''élever/se lever'
         phonetique: ''
         irregular: true
     run:
         present: run
         preterit: ran
-        participe: run
+        participe_passe: run
+        participe_present: 'running'
+        participe_perfect: ''
         traduction: 'courir'
         phonetique: ''
         irregular: true
     saw:
         present: saw
         preterit: sawed
-        participe: sawn
+        participe_passe: sawn
+        participe_present: 'sawing'
+        participe_perfect: ''
         traduction: 'scier'
         phonetique: ''
         irregular: true
     say:
         present: say
         preterit: said
-        participe: said
+        participe_passe: said
+        participe_present: 'saying'
+        participe_perfect: ''
         traduction: 'dire'
         phonetique: ''
         irregular: true
     see:
         present: see
         preterit: saw
-        participe: seen
+        participe_passe: seen
+        participe_present: 'seeing'
+        participe_perfect: ''
         traduction: 'voir'
         phonetique: ''
         irregular: true
     seek:
         present: seek
         preterit: sought
-        participe: sought
+        participe_passe: sought
+        participe_present: 'seeking'
+        participe_perfect: ''
         traduction: 'chercher'
         phonetique: ''
         irregular: true
     sell:
         present: sell
         preterit: sold
-        participe: sold
+        participe_passe: sold
+        participe_present: 'selling'
+        participe_perfect: ''
         traduction: 'vendre'
         phonetique: ''
         irregular: true
     send:
         present: send
         preterit: sent
-        participe: sent
+        participe_passe: sent
+        participe_present: 'sending'
+        participe_perfect: ''
         traduction: 'envoyer'
         phonetique: ''
         irregular: true
     set:
         present: set
         preterit: set
-        participe: set
+        participe_passe: set
+        participe_present: 'setting'
+        participe_perfect: ''
         traduction: 'fiwer'
         phonetique: ''
         irregular: true
     sew:
         present: sew
         preterit: sewed
-        participe: sewn
+        participe_passe: sewn
+        participe_present: 'sewing'
+        participe_perfect: ''
         traduction: 'coudre'
         phonetique: ''
         irregular: true
     shake:
         present: shake
         preterit: shook
-        participe: shaken
+        participe_passe: shaken
+        participe_present: 'shaking'
+        participe_perfect: ''
         traduction: 'secouer'
         phonetique: ''
         irregular: true
     shear:
         present: shear
         preterit: sheared
-        participe: shorn
+        participe_passe: shorn
+        participe_present: 'shearing'
+        participe_perfect: ''
         traduction: 'tondre/cisailler'
         phonetique: ''
         irregular: true
     shed:
         present: shed
         preterit: shed
-        participe: shed
+        participe_passe: shed
+        participe_present: 'shedding'
+        participe_perfect: ''
         traduction: 'verser/répandre'
         phonetique: ''
         irregular: true
     shine:
         present: shine
         preterit: shone
-        participe: shone
+        participe_passe: shone
+        participe_present: 'shining'
+        participe_perfect: ''
         traduction: 'briller'
         phonetique: ''
         irregular: true
     shoe:
         present: shoe
         preterit: shod
-        participe: shod
+        participe_passe: shod
+        participe_present: 'shoeing'
+        participe_perfect: ''
         traduction: 'ferrer/chausser'
         phonetique: ''
         irregular: true
     shoot:
         present: shoot
         preterit: shot
-        participe: shot
+        participe_passe: shot
+        participe_present: 'shooting'
+        participe_perfect: ''
         traduction: 'tirer un projectile/tuer/filmer'
         phonetique: ''
         irregular: true
     show:
         present: show
         preterit: showed
-        participe: shown
+        participe_passe: shown
+        participe_present: 'showing'
+        participe_perfect: ''
         traduction: 'montrer'
         phonetique: ''
         irregular: true
     shrink:
         present: shrink
         preterit: shrank
-        participe: shrunk
+        participe_passe: shrunk
+        participe_present: 'shrinking'
+        participe_perfect: ''
         traduction: 'rétrécir'
         phonetique: ''
         irregular: true
     shut:
         present: shut
         preterit: shut
-        participe: shut
+        participe_passe: shut
+        participe_present: 'shutting'
+        participe_perfect: ''
         traduction: 'fermer'
         phonetique: ''
         irregular: true
     sing:
         present: sing
         preterit: sang
-        participe: sung
+        participe_passe: sung
+        participe_present: 'singing'
+        participe_perfect: ''
         traduction: 'chanter'
         phonetique: ''
         irregular: true
     sink:
         present: sink
         preterit: sank
-        participe: sunk
-        traduction: 'couler'
+        participe_passe: sunk
+        participe_present: 'sinking'
+        participe_perfect: ''
+        traduction: 'couler/sombrer/enfoncer'
         phonetique: ''
         irregular: true
     sit:
         present: sit
         preterit: sat
-        participe: sat
+        participe_passe: sat
+        participe_present: 'sitting'
+        participe_perfect: ''
         traduction: 'être assis'
         phonetique: ''
         irregular: true
     sleep:
         present: sleep
         preterit: slept
-        participe: slept
+        participe_passe: slept
+        participe_present: 'sleeping'
+        participe_perfect: ''
         traduction: 'dormir'
         phonetique: ''
         irregular: true
     slide:
         present: slide
         preterit: slid
-        participe: slid
+        participe_passe: slid
+        participe_present: 'sliding'
+        participe_perfect: ''
         traduction: 'glisser'
         phonetique: ''
         irregular: true
     sling:
         present: sling
         preterit: slung
-        participe: slung
+        participe_passe: slung
+        participe_present: 'slinging'
+        participe_perfect: ''
         traduction: 'lancer fort'
         phonetique: ''
         irregular: true
     slink:
         present: slink
         preterit: slunk
-        participe: slunk
+        participe_passe: slunk
+        participe_present: 'slinking'
+        participe_perfect: ''
         traduction: 'aller furtivement'
         phonetique: ''
         irregular: true
     slit:
         present: slit
         preterit: slit
-        participe: slit
+        participe_passe: slit
+        participe_present: 'slitting'
+        participe_perfect: ''
         traduction: 'se fendre/inciser'
         phonetique: ''
         irregular: true
     smell:
         present: smell
         preterit: smelt
-        participe: smelt
+        participe_passe: smelt
+        participe_present: 'smelling'
+        participe_perfect: ''
         traduction: 'sentir/flairer'
         phonetique: ''
         irregular: true
     sow:
         present: sow
         preterit: sowed
-        participe: sown
+        participe_passe: sown
+        participe_present: 'sowing'
+        participe_perfect: ''
         traduction: 'semer'
         phonetique: ''
         irregular: true
     speak:
         present: speak
         preterit: spoke
-        participe: spoken
+        participe_passe: spoken
+        participe_present: 'speaking'
+        participe_perfect: ''
         traduction: 'briller'
         phonetique: ''
         irregular: true
     speed:
         present: speed
         preterit: sped
-        participe: sped
+        participe_passe: sped
+        participe_present: 'speeding'
+        participe_perfect: ''
         traduction: 'aller très vite'
         phonetique: ''
         irregular: true
     spell:
         present: spell
         preterit: spetl
-        participe: spetl
+        participe_passe: spetl
+        participe_present: 'spelling'
+        participe_perfect: ''
         traduction: 'épeler/orthographier'
         phonetique: ''
         irregular: true
     spend:
         present: spend
         preterit: spent
-        participe: spent
+        participe_passe: spent
+        participe_present: 'spending'
+        participe_perfect: ''
         traduction: 'dépenser'
         phonetique: ''
         irregular: true
     spill:
         present: spill
         preterit: spilt
-        participe: spilt
+        participe_passe: spilt
+        participe_present: 'spilling'
+        participe_perfect: ''
         traduction: 'renverser un liquide'
         phonetique: ''
         irregular: true
     spit:
         present: spit
         preterit: spat
-        participe: spat
+        participe_passe: spat
+        participe_present: 'spitting'
+        participe_perfect: ''
         traduction: 'cracher'
         phonetique: ''
         irregular: true
     split:
         present: split
         preterit: split
-        participe: split
+        participe_passe: split
+        participe_present: 'splitting'
+        participe_perfect: ''
         traduction: 'fendre'
         phonetique: ''
         irregular: true
     spoil:
         present: spoil
         preterit: spoilt
-        participe: spoilt
+        participe_passe: spoilt
+        participe_present: 'spoiling'
+        participe_perfect: ''
         traduction: 'gâcher/gâter'
         phonetique: ''
         irregular: true
     spread:
         present: spread
         preterit: spread
-        participe: spread
+        participe_passe: spread
+        participe_present: 'spreading'
+        participe_perfect: ''
         traduction: 'répandre'
         phonetique: ''
         irregular: true
     spring:
         present: spring
         preterit: sprang
-        participe: sprung
+        participe_passe: sprung
+        participe_present: 'springing'
+        participe_perfect: ''
         traduction: 'jaillir/bondir'
         phonetique: ''
         irregular: true
     stand:
         present: stand
         preterit: stood
-        participe: stood
+        participe_passe: stood
+        participe_present: 'standing'
+        participe_perfect: ''
         traduction: 'être debout'
         phonetique: ''
         irregular: true
     steal:
         present: steal
         preterit: stole
-        participe: stolen
+        participe_passe: stolen
+        participe_present: 'stealing'
+        participe_perfect: ''
         traduction: 'voler/dérober'
         phonetique: ''
         irregular: true
     stick:
         present: stick
         preterit: stuck
-        participe: stuck
+        participe_passe: stuck
+        participe_present: 'sticking'
+        participe_perfect: ''
         traduction: 'coller'
         phonetique: ''
         irregular: true
     sting:
         present: sting
         preterit: stang
-        participe: stunk
+        participe_passe: stung
+        participe_present: 'stinging'
+        participe_perfect: ''
         traduction: 'piquer'
         phonetique: ''
         irregular: true
     stink:
         present: stink
         preterit: stank
-        participe: stank
+        participe_passe: stank
+        participe_present: 'stinking'
+        participe_perfect: ''
         traduction: 'puer'
         phonetique: ''
         irregular: true
     stride:
         present: stride
         preterit: strode
-        participe: stridden
+        participe_passe: stridden
+        participe_present: 'striding'
+        participe_perfect: ''
         traduction: 'marcher à grands pas'
         phonetique: ''
         irregular: true
     strike:
         present: strike
         preterit: struck
-        participe: struck
+        participe_passe: struck
+        participe_present: 'striking'
+        participe_perfect: ''
         traduction: 'frapper'
         phonetique: ''
         irregular: true
     string:
         present: string
         preterit: strung
-        participe: strung
+        participe_passe: strung
+        participe_present: 'stringing'
+        participe_perfect: ''
         traduction: 'ficeler'
         phonetique: ''
         irregular: true
     strive:
         present: strive
         preterit: strove
-        participe: striven
+        participe_passe: striven
+        participe_present: 'striving'
+        participe_perfect: ''
         traduction: 's''efforcer'
         phonetique: ''
         irregular: true
     swear:
         present: swear
         preterit: swore
-        participe: sworn
+        participe_passe: sworn
+        participe_present: 'swearing'
+        participe_perfect: ''
         traduction: 'jurer'
         phonetique: ''
         irregular: true
     sweep:
         present: sweep
         preterit: swept
-        participe: swept
+        participe_passe: swept
+        participe_present: 'sweeping'
+        participe_perfect: ''
         traduction: 'balayer'
         phonetique: ''
         irregular: true
     swell:
         present: swell
         preterit: swelled
-        participe: swollen
+        participe_passe: swollen
+        participe_present: 'swelling'
+        participe_perfect: ''
         traduction: 'enfler'
         phonetique: ''
         irregular: true
     swim:
         present: swim
         preterit: swam
-        participe: swum
+        participe_passe: swum
+        participe_present: 'swimming'
+        participe_perfect: ''
         traduction: 'nager'
         phonetique: ''
         irregular: true
     swing:
         present: swing
         preterit: swung
-        participe: swung
+        participe_passe: swung
+        participe_present: 'swinging'
+        participe_perfect: ''
         traduction: 'se balancer'
         phonetique: ''
         irregular: true
     teach:
         present: teach
         preterit: taught
-        participe: taught
+        participe_passe: taught
+        participe_present: 'teaching'
+        participe_perfect: ''
         traduction: 'enseigner'
         phonetique: ''
         irregular: true
     tear:
         present: tear
         preterit: tore
-        participe: torn
+        participe_passe: torn
+        participe_present: 'tearing'
+        participe_perfect: ''
         traduction: 'déchirer'
         phonetique: ''
         irregular: true
     tell:
         present: tell
         preterit: told
-        participe: told
+        participe_passe: told
+        participe_present: 'telling'
+        participe_perfect: ''
         traduction: 'parler'
         phonetique: ''
         irregular: true
     think:
         present: think
         preterit: thought
-        participe: thought
+        participe_passe: thought
+        participe_present: 'thinking'
+        participe_perfect: ''
         traduction: 'penser'
         phonetique: ''
         irregular: true
     throw:
         present: throw
         preterit: threw
-        participe: thrown
+        participe_passe: thrown
+        participe_present: 'throwing'
+        participe_perfect: ''
         traduction: 'jeter'
         phonetique: ''
         irregular: true
     thrust:
         present: thrust
         preterit: thrust
-        participe: thrust
+        participe_passe: thrust
+        participe_present: 'thrusting'
+        participe_perfect: ''
         traduction: 'enfoncer'
         phonetique: ''
         irregular: true
     tread:
         present: tread
         preterit: trod
-        participe: trodden
+        participe_passe: trodden
+        participe_present: 'treading'
+        participe_perfect: ''
         traduction: 'piétiner quelque chose'
         phonetique: ''
         irregular: true
     understand:
         present: understand
         preterit: understood
-        participe: understood
+        participe_passe: understood
+        participe_present: 'understanding'
+        participe_perfect: ''
         traduction: 'comprendre'
         phonetique: ''
         irregular: true
     wake:
         present: wake
         preterit: woke
-        participe: woken
+        participe_passe: woken
+        participe_present: 'waking'
+        participe_perfect: ''
         traduction: '(se) réveiller'
         phonetique: ''
         irregular: true
     wear:
         present: wear
         preterit: wore
-        participe: worn
+        participe_passe: worn
+        participe_present: 'wearing'
+        participe_perfect: ''
         traduction: 'porter (des habits)'
         phonetique: ''
         irregular: true
     weave:
         present: weave
         preterit: wove
-        participe: woven
+        participe_passe: woven
+        participe_present: 'weaving'
+        participe_perfect: ''
         traduction: 'tisser'
         phonetique: ''
         irregular: true
     weep:
         present: weep
         preterit: wept
-        participe: wept
+        participe_passe: wept
+        participe_present: 'weeping'
+        participe_perfect: ''
         traduction: 'pleurer'
         phonetique: ''
         irregular: true
     win:
         present: win
         preterit: won
-        participe: won
+        participe_passe: won
+        participe_present: 'winning'
+        participe_perfect: ''
         traduction: 'gagner'
         phonetique: ''
         irregular: true
     wind:
         present: wind
         preterit: wound
-        participe: wound
+        participe_passe: wound
+        participe_present: 'winding'
+        participe_perfect: ''
         traduction: 'enrouler'
         phonetique: ''
         irregular: true
     wring:
         present: wring
         preterit: wrung
-        participe: wrung
+        participe_passe: wrung
+        participe_present: 'wringing'
+        participe_perfect: ''
         traduction: 'tordre'
         phonetique: ''
         irregular: true
     write:
         present: write
         preterit: wrote
-        participe: written
+        participe_passe: written
+        participe_present: 'writing'
+        participe_perfect: ''
         traduction: 'écrire'
         phonetique: ''
         irregular: true

@@ -14,7 +14,8 @@ class VerbFormType extends AbstractType
         $builder
             ->add('present')
             ->add('preterit')
-            ->add('participe')
+            ->add('participepresent')
+            ->add('participepasse')
             ->add('traduction')
             ->add('phonetique')
             ->add('irregular')

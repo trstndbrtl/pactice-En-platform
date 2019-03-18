@@ -19,32 +19,38 @@ class VerbRepository extends ServiceEntityRepository
         parent::__construct($registry, Verb::class);
     }
 
-    // /**
-    //  * @return Verb[] Returns an array of Verb objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    /**
+     * @return Verb[]
+     */
+    public function findAllVerbIrregularByAlphabetical($limit = 20,  $offset = 0)
     {
         return $this->createQueryBuilder('v')
-            ->andWhere('v.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('v.id', 'ASC')
-            ->setMaxResults(10)
+            ->select('partial v.{id, present, traduction}')
+            ->andWhere('v.irregular = :val')
+            ->setParameter('val', true)
+            ->orderBy('v.present', 'ASC')
+            ->setFirstResult($offset)
+            ->setMaxResults($limit)
             ->getQuery()
-            ->getResult()
+            ->execute()
         ;
     }
-    */
 
-    /*
-    public function findOneBySomeField($value): ?Verb
+    /**
+     * @return Verb[]
+     */
+    public function findAllVerbRegularByAlphabetical($limit = 40,  $offset = 0)
     {
         return $this->createQueryBuilder('v')
-            ->andWhere('v.exampleField = :val')
-            ->setParameter('val', $value)
+            ->select('partial v.{id, present, traduction}')
+            ->andWhere('v.irregular = :val')
+            ->setParameter('val', false)
+            ->orderBy('v.present', 'ASC')
+            ->setFirstResult($offset)
+            ->setMaxResults($limit)
             ->getQuery()
-            ->getOneOrNullResult()
+            ->execute()
         ;
     }
-    */
+
 }

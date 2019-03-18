@@ -17,9 +17,9 @@
             <tbody>
                 {% for verb in verbs %}
                 <tr>
-                    <td>{{ verb.present }}</td>
+                    <td><a href="{{ path('app_the_verb', { 'present': verb.present }) }}">{{ verb.present }}</a></td>
                     <td>{{ verb.preterit }}</td>
-                    <td>{{ verb.participe }}</td>
+                    <td>{{ verb.participepasse }}</td>
                     <td>{{ verb.traduction }}</td>
                     {% if is_granted('ROLE_ADMIN') %}
                     <td class="uk-text-right">

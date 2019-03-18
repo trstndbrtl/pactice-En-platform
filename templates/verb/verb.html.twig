@@ -1,0 +1,414 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ verb.present }} {{ page_title }} !{% endblock %}
+{% block body %}
+<div class="uk-section">
+    <div class="uk-container uk-container-large">
+        <h1>{{ verb.present }}</h1>
+        {% set pronoms = ['I', 'you', 'he she it', 'we', 'you', 'they'] %}
+
+         <table class="uk-table uk-table-responsive uk-table-divider">
+            <thead>
+                <tr>
+                    <th>Présent</th>
+                    <th>Préterit</th>
+                    <th>Participe passé</th>
+                    <th>Traduction</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ verb.present }}</td>
+                    <td>{{ verb.preterit }}</td>
+                    <td>{{ verb.participepasse }}</td>
+                    <td>{{ verb.traduction }}</td>
+                    <td>{{ verb.phonetique }}</td>
+                    <td>{{ verb.irregular }}</td>
+                    {% if is_granted('ROLE_ADMIN') %}
+                    <td class="uk-text-right">
+                        <a href="{{ path('app_edit_verb', { 'id': verb.id }) }}" uk-icon="icon: pencil"></a>
+                        <a href="{{ path('app_delete_verb', { 'id': verb.id }) }}" uk-icon="icon: trash"></a>
+                    </td>
+                    {% endif %}
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-text-left" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Present</h4>
+                    <a class="speech-synth-all" href="#" data-id="present">All</a>
+                    <div id="present" 
+                        {% for pronom in pronoms %}
+                            {% if verb.present == 'be' %}
+                                {# process be vebs #}
+                                {% if pronom == 'I' %}
+                                    <li><a class="speech-synth" href="#">{{ pronom }} am</a></li>
+                                {% elseif pronom == 'he she it' %}
+                                <li><a class="speech-synth" href="#">{{ pronom }} is</a></li>
+                                {% else %}
+                                    <li><a class="speech-synth" href="#">{{ pronom }} are</a></li>
+                                {% endif %}
+                            {% elseif verb.present == 'have' %}
+                                {# process have vebs #}
+                                {% if pronom == 'he she it' %}
+                                <li><a class="speech-synth" href="#">{{ pronom }} has</a></li>
+                                {% else %}
+                                    <li><a class="speech-synth" href="#">{{ pronom }} have</a></li>
+                                {% endif %}
+                            {% else %}
+                                {# process others vebs #}
+                                {% if pronom == 'he she it' %}
+                                    {% if verb.present|last == 'y' %}
+                                        <li><a class="speech-synth" href="#">{{ pronom }} {{ verb.present }}ies </a></li>
+                                    {% elseif verb.present ends with 's' or verb.present ends with 'x' or verb.present ends with 'o' or verb.present ends with 'ch' or verb.present ends with 'sh' %}
+                                        <li><a class="speech-synth" href="#">{{ pronom }} {{ verb.present }}es </a></li>
+                                    {% elseif verb.present ends with 'ze' %}
+                                        <li><a class="speech-synth" href="#">{{ pronom }} {{ verb.present }}s </a></li>    
+                                    {% else %}
+                                        <li><a class="speech-synth" href="#">{{ pronom }} {{ verb.present }}s </a></li>
+                                    {% endif %}
+                                {% else %}
+                                    <li><a class="speech-synth" href="#">{{ pronom }} {{ verb.present }} </a></li>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id=="present-continuous" class="uk-card uk-card-default uk-card-body">
+                    <h4>Present continuous</h4>
+                    {% for pronom in pronoms %}
+                        {# process be vebs #}
+                        {% if pronom == 'I' %}
+                            <li><a class="speech-synth" href="#">{{ pronom }} am {{ verb.participepresent }}</a></li>
+                        {% elseif pronom == 'he she it' %}
+                            <li><a class="speech-synth" href="#">{{ pronom }} is {{ verb.participepresent }}</a></li>
+                        {% else %}
+                            <li><a class="speech-synth" href="#">{{ pronom }} are {{ verb.participepresent }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div>
+                <div data-id="present-perfect" class="uk-card uk-card-default uk-card-body">
+                    <h4>Present perfect</h4>
+                    {% for pronom in pronoms %}
+                        {% if pronom == 'he she it' %}
+                            <li><a class="speech-synth" href="#">{{ pronom }} has {{ verb.participepasse }}</a></li>
+                        {% else %}
+                            <li><a class="speech-synth" href="#">{{ pronom }} have {{ verb.participepasse }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div>
+                <div id="present-perfect-continuous" class="uk-card uk-card-default uk-card-body">
+                    <h4>Present perfect continuous</h4>
+                    {% for pronom in pronoms %}
+                        <li><a class="speech-synth" href="#">{{ pronom }} have been {{ verb.participepasse }}</a></li>
+                    {% endfor %}
+                </div>
+            </div>
+            <div>
+                <div id="preterit" class="uk-card uk-card-default uk-card-body">
+                    <h4>Preterit</h4>
+                    {% for pronom in pronoms %}
+                        <li><a class="speech-synth" href="#">{{ pronom }} {{ verb.preterit }}</a></li>
+                    {% endfor %}
+                </div>
+            </div>
+            <div>
+                <div id="past-continuous" class="uk-card uk-card-default uk-card-body">
+                    <h4>Past continuous</h4>
+                    {% for pronom in pronoms %}
+                        {% if pronom == 'I' or pronom == 'he she it' %}
+                            <li><a class="speech-synth" href="#">{{ pronom }} was {{ verb.participepresent }}</a></li>
+                        {% else %}
+                            <li><a class="speech-synth" href="#">{{ pronom }} were {{ verb.participepresent }}</a></li>
+                        {% endif %}
+                    {% endfor %} 
+                </div>
+            </div>
+            <div>
+                <div id="past-perfect" class="uk-card uk-card-default uk-card-body">
+                    <h4>Past perfect</h4>
+                    {% for pronom in pronoms %}
+                        <li><a class="speech-synth" href="#">{{ pronom }} had {{ verb.participepasse }}</a></li>
+                    {% endfor %}
+                </div>
+            </div>
+            <div>
+                <div id="past-perfect-continuous" class="uk-card uk-card-default uk-card-body">
+                    <h4>Past perfect continuous</h4>
+                    {% for pronom in pronoms %}
+                        <li><a class="speech-synth" href="#">{{ pronom }} had been {{ verb.participepasse }}</a></li>
+                    {% endfor %}
+                </div>
+            </div>
+            <div>
+                <div id="future" class="uk-card uk-card-default uk-card-body">
+                    <h4>Future</h4>
+                    {% for pronom in pronoms %}
+                        <li><a class="speech-synth" href="#">{{ pronom }} will {{ verb.present }}</a></li>
+                    {% endfor %}   
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Future continuous</h4>
+                    <a class="speech-synth-all" href="#" data-id="futur-continuous">All</a>
+                    <div id="futur-continuous">
+                        {% for pronom in pronoms %}
+                            <li><a class="speech-synth" href="#">{{ pronom }} will be {{ verb.participepresent }}</a></li>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Future perfect</h4>
+                    <a class="speech-synth-all" href="#" data-id="futur-perfect">All</a>
+                    <div id="futur-perfect">
+                        {% for pronom in pronoms %}
+                            <li><a class="speech-synth" href="#">{{ pronom }} will have {{ verb.participepasse }}</a></li>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h4>Futur perfect continuous</h4>
+                    
+                    <div>
+                        <span id="panel" style=""></span>
+                        Speaking word : <span id="word" style="color:blue;"></span><br><br>
+                        Speaking last : <span id="panel-last" style="color:violet;"></span>
+                    </div>
+                    <a class="speech-synth-all" href="#" data-id="futur-perfect-continuous">All</a>
+                    <div id="futur-perfect-continuous">
+                        {% for pronom in pronoms %}
+                            {% if loop.index == 1 or loop.index == 2 %}
+                            <div>
+                                <a class="speech-synth" href="#" data-loop="{{ loop.index }}">
+                                    <span data-{{ pronom }}="{{ pronom }}-{{ loop.index }}">{{ pronom }} </span> 
+                                    <span data-will="will-{{ loop.index }}">will </span> 
+                                    <span data-have="have-{{ loop.index }}">have </span> 
+                                    <span data-been="been-{{ loop.index }}">been </span> 
+                                    <span data-{{ verb.participepasse }}="{{ verb.participepasse }}-{{ loop.index }}">{{ verb.participepasse }}</span>
+                                </a>
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+        <script>
+        
+            // Store follow link
+            var followBTN = document.getElementById('user-follow');
+            var voices = document.getElementById('voices');
+
+            var wordIndex = 0;
+            var global_words = [];
+            var last_words = '';
+
+            document.body.addEventListener('click', function (evt) {
+                if (evt.target.className === 'speech-synth') {
+                    evt.preventDefault();
+                    console.log(evt.target.text)
+                    var text = evt.target.text;
+                    var msg = new SpeechSynthesisUtterance();
+                    var voices = window.speechSynthesis.getVoices();
+                    console.log(voices);
+                    msg.voice = voices[voices];
+                    msg.rate = 6 / 10;
+                    msg.pitch = 1;
+                    msg.text = text;
+                    msg.lang = 'en-US';
+
+                    msg.onend = function(ep) {
+                        console.log('Finished in ' + ep.elapsedTime + ' seconds.');
+                    };
+
+                    msg.onboundary = function(event) {
+                        console.log(event.name + ' boundary reached after ' + event.elapsedTime + ' milliseconds.');
+                        console.log(event.target.text);
+                    }
+
+                     msg.onend = function(ep) {
+                        console.log('Finished in ' + ep.elapsedTime + ' seconds.');
+                    };
+
+                    speechSynthesis.speak(msg);
+
+                }
+                if (evt.target.className === 'speech-synth-all') {
+                    evt.preventDefault();
+                    
+                    let id = evt.target.getAttribute("data-id");
+                    let temps = document.getElementById(id);
+                    let text = temps.innerText;
+                    //let sentence = text.replace(/\\n/g, '');
+                    // var sentence = text.split("\n");
+                    // sentence = sentence.filter(function(e){return e}); 
+                    // text.replace(/[\r\n]/g, / +/g)
+                    // console.log(sentence);
+                    // var wordsq = text.replace(/[\r\n]/g, '').replace(/[ ]/g, '/').replace(/[ ]/g, '');
+
+                    // var wordsq = text.replace(/[\r\n]/g, '').trim().replace(/ +/g, '/').replace(/ +/g, '');
+                    // var words = text.replace(/[\r\n]/g, '').trim().replace(/ +/g, '/');
+                    words = text.replace(/[\r\n]/g, ' ').split(" ");
+                    global_words = words;
+                    // console.log(words);
+
+                    let msg = new SpeechSynthesisUtterance();
+                    let voices = window.speechSynthesis.getVoices();
+                    msg.voice = voices[voices];
+                    msg.rate = 6 / 10;
+                    msg.pitch = 1;
+                    msg.text = text;
+                    msg.lang = 'en-US';
+
+                    msg.onend = function(ep) {
+                        console.log('Finished in ' + ep.elapsedTime + ' seconds.');
+                        document.getElementById("word").innerHTML = "";
+                        wordIndex = 0;
+                        document.getElementById("panel").innerHTML = "";
+                        last_words = "";
+                    };
+                    
+                    msg.onboundary = function(event) {
+                        
+                        var wordAll = event.target.text;
+                        var word = wordAll.replace(/[\r\n]/g, ' ');
+                        console.log(word);
+                        
+                        str = String(word);
+                        pos = Number(event.charIndex) >>> 0;
+                        // console.log(str);
+
+                        // Search for the word's beginning and end.
+                        var left = str.slice(0, pos + 1).search(/\S+$/),
+                            right = str.slice(pos).search(/\s/);
+
+                        // The last word in the string is a special case.
+                        if (right < 0) {
+                            word =  str.slice(left);
+                        }else{
+                            word =  str.slice(left, right + pos);
+                        }
+
+                        if(temps.children) {
+
+                           //  console.log(temps.children);
+                            var ItemDataSrc = 'data-' + word.toLowerCase();
+                            // console.log('data-' + word.toLowerCase());
+                            var ci;
+                            var i;
+                            var current = 0;
+                            console.log(event);
+                            // console.log(event.charIndex)
+                            // console.log(temps.children);
+                            
+                            //     for (i = 0; i < temps.children[ci].children.length; i++) {
+                            //         var wordArray = temps.children[ci].children[i];
+                            //         if (current == ci && wordArray.hasAttribute(ItemDataSrc)) {
+                            //             console.log(wordArray);
+                            //             wordArray.style.fontWeight = "900"
+                            //         }else{
+                            //             wordArray.style.fontWeight = "300"
+                            //         }
+                            //     }
+
+
+
+                            //if(temps.children[0].children) {
+                            //
+                            //    console.log('data-' + word.toLowerCase());
+                            //    var ItemDataSrc = 'data-' + word.toLowerCase();
+                            //
+                            //    var i;
+                            //    for (i = 0; i < temps.children[0].children.length; i++) {
+                            //        var wordArray = temps.children[0].children[i];
+                            //        if (wordArray.hasAttribute(ItemDataSrc)) {
+                            //            console.log(wordArray);
+                            //            wordArray.style.fontWeight = "900"
+                            //        }else{
+                            //            wordArray.style.fontWeight = "300"
+                            //        }
+                            //    }
+                            //    
+                            //}
+                            
+                        }
+                        // console.log(word.toLowerCase());
+                        
+                        // console.log(temps.children[0].children.getAttribute('data-' + word.toLowerCase()));
+                        
+                        // Show Speaking word : x
+                        document.getElementById("word").innerHTML = word;
+
+                        var panel = document.getElementById("panel");
+                        if(global_words[wordIndex]){
+                            //Increase index of span to highlight
+                            //console.info(global_words[wordIndex]);
+                            document.getElementById("panel-last").innerHTML = global_words[wordIndex];
+                            last_words = global_words[wordIndex]
+                        }
+                        
+
+                        try{
+                            document.getElementById("word_span_"+wordIndex).style.color = "blue";   
+                        }catch(e){}
+                        wordIndex++;
+
+                    
+                    //    console.log(event.name + ' boundary reached after ' + event.elapsedTime + ' milliseconds.');
+                    //    console.log(event);
+                    }
+
+                    speechSynthesis.speak(msg);
+         
+                }
+                
+
+                if (evt.target.className === 'add-verd') {
+                    evt.preventDefault();
+                    console.log(evt.target.text)
+                    var text = evt.target.text;
+                    var msg = new SpeechSynthesisUtterance();
+                    var voices = window.speechSynthesis.getVoices();
+                    console.log(voices);
+                    msg.voice = voices[voices];
+                    msg.rate = 6 / 10;
+                    msg.pitch = 1;
+                    msg.text = text;
+                    msg.lang = 'en-US';
+
+                    msg.onend = function(ep) {
+                        console.log('Finished in ' + ep.elapsedTime + ' seconds.');
+                    };
+
+                    speechSynthesis.speak(msg);
+                }
+            }, false);
+
+            function drawTextInPanel(words_array){
+                console.log("Dibujado");
+                    var panel = document.getElementById("panel");
+                for(var i = 0;i < words_array.length;i++){
+                    var html = '<span id="word_span_'+i+'">'+words_array[i]+'</span>&nbsp;';
+                    panel.innerHTML += html;
+                }
+            }
+ 
+        </script>
+
+    </div>
+</div>
+{% endblock %}
